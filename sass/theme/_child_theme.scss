@@ -1,3 +1,4 @@
+@import './child_theme_background'; 
 
 #hero-menu {
   ul {
@@ -7,11 +8,6 @@
       font-size: 2em;
     }
   }
-}
-
-.bg-moton-eggplant {
-  background-color: $moton-eggplant;
-  color: #fff;
 }
 
 .text-moton-eggplant {

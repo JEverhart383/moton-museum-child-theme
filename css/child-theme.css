@@ -11612,15 +11612,80 @@ figure.woocommerce-product-gallery__wrapper {
 .gallery-caption {
   display: block; }
 
+.bg-image h1,
+.bg-image h2,
+.bg-image h3,
+.bg-image .bg-image-content {
+  display: inline-block;
+  background-color: #FFF;
+  padding: .5em; }
+
+.bg-crosshatch-moton-eggplant {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-eggplant/crosshatch.png"); }
+
+.bg-horizontal-lines-moton-eggplant {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-eggplant/horizontal-lines.png"); }
+
+.bg-triangles-moton-eggplant {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-eggplant/triangles.png"); }
+
+.bg-crosshatch-moton-eggplant {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-eggplant/crosshatch.png"); }
+
+.bg-moton-eggplant {
+  background-color: #48182D;
+  color: #fff; }
+
+.bg-crosshatch-moton-orange {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-orange/crosshatch.png"); }
+
+.bg-horizontal-lines-moton-orange {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-orange/horizontal-lines.png"); }
+
+.bg-triangles-moton-orange {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-orange/triangles.png"); }
+
+.bg-mudcloth-11-moton-orange {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-orange/Mudcloth_11.png"); }
+
+.bg-mudcloth-9-moton-orange {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-orange/Mudcloth_9.png"); }
+
+.bg-crosshatch-moton-blue {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-blue/crosshatch.png"); }
+
+.bg-horizontal-lines-moton-blue {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-blue/horizontal-lines.png"); }
+
+.bg-triangles-moton-blue {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-blue/triangles.png"); }
+
+.bg-mudcloth-11-moton-blue {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-blue/Mudcloth_11.png"); }
+
+.bg-mudcloth-9-moton-blue {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-blue/Mudcloth_9.png"); }
+
+.bg-crosshatch-moton-green {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-green/crosshatch.png"); }
+
+.bg-horizontal-lines-moton-green {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-green/horizontal-lines.png"); }
+
+.bg-triangles-moton-green {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-green/triangles.png"); }
+
+.bg-mudcloth-11-moton-green {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-green/Mudcloth_11.png"); }
+
+.bg-mudcloth-9-moton-green {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-green/Mudcloth_9.png"); }
+
 #hero-menu ul {
   list-style-type: none; }
   #hero-menu ul li {
     min-height: 100px;
     font-size: 2em; }
-
-.bg-moton-eggplant {
-  background-color: #48182D;
-  color: #fff; }
 
 .text-moton-eggplant {
   color: #48182D; }
