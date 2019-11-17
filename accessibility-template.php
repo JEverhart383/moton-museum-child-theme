@@ -15,7 +15,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <div class="jumbotron jumbotron-fluid listing-hero">
   <div class="container">
-    <h1 class="display-4">Button Test</h1>
+    <h1 class="display-4">Accessibility Template</h1>
   </div>
 </div>
 
