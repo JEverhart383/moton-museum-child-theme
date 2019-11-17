@@ -11612,6 +11612,31 @@ figure.woocommerce-product-gallery__wrapper {
 .gallery-caption {
   display: block; }
 
+#hero-menu ul {
+  list-style-type: none; }
+  #hero-menu ul li {
+    min-height: 100px;
+    font-size: 2em; }
+
+.bg-moton-eggplant {
+  background-color: #48182D;
+  color: #fff; }
+
+.text-moton-eggplant {
+  color: #48182D; }
+
+.text-moton-orange {
+  color: #C46819; }
+
+.text-moton-blue {
+  color: #80A3B7; }
+
+.text-moton-green {
+  color: #8E8603; }
+
+#wrapper-navbar nav.navbar {
+  border-bottom: 2px solid #8E8603; }
+
 #wrapper-footer-full {
   background-color: #1f1f1f;
   color: #fff; }

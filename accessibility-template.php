@@ -31,16 +31,56 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="row">
           <div class="col-lg-12">
           <h3>Regular Buttons</h4>
+          <p>These are the only combination of buttons that meet contrast ratio requirements</p>
           <button type="button" class="btn btn-primary">Primary</button>
           <button type="button" class="btn btn-secondary">Secondary</button>
 
           </div>
         </div>
-        <div class="row">
+        <div class="row mt-5">
           <div class="col-lg-12">
           <h3>Outline Buttons</h4>
+          <p>These are the only combination of buttons that meet contrast ratio requirements</p>
           <button type="button" class="btn btn-outline-primary">Primary</button>
           <button type="button" class="btn btn-outline-secondary">Secondary</button>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-12">
+          <h3>Dark Background Tests</h4>
+          <p>None of the Moton colors meet contrast requirements here, either</p>
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+              <div class="card-header">Header</div>
+              <div class="card-body">
+                <h5 class="card-title">Secondary card title</h5>
+                <p class="card-text">Meets Contrast Requirements</p>
+                <p class="card-text text-moton-eggplant">Does Not Meet Contrast Requirements</p>
+                <p class="card-text text-moton-orange">Does Not Meet Contrast Requirements</p>
+                <p class="card-text text-moton-blue">Does Not Contrast Requirements</p>
+                <p class="card-text text-moton-green">Does Not Meet Contrast Requirements</p>
+              </div>
+            </div>
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">Header</div>
+              <div class="card-body">
+                <h5 class="card-title">Secondary card title</h5>
+                <p class="card-text">Meets Contrast Requirements</p>
+                <p class="card-text text-moton-eggplant">Does Not Meet Contrast Requirements</p>
+                <p class="card-text text-moton-orange">Does Not Meet Contrast Requirements</p>
+                <p class="card-text text-moton-blue">Meets Contrast Requirements</p>
+                <p class="card-text text-moton-green">Does Not Meet Contrast Requirements</p>
+              </div>
+            </div>
+            <div class="card text-white bg-moton-eggplant mb-3" style="max-width: 18rem;">
+              <div class="card-header">Header</div>
+              <div class="card-body">
+                <h5 class="card-title">Secondary card title</h5>
+                <p class="card-text">Meets Contrast Requirements</p>
+                <p class="card-text text-moton-orange">Does Not Meet Contrast Requirements</p>
+                <p class="card-text text-moton-blue">Meets Contrast Requirements</p>
+                <p class="card-text text-moton-green">Does Not Meet Contrast Requirements</p>
+              </div>
+            </div>
           </div>
         </div>
 				</main><!-- #main -->

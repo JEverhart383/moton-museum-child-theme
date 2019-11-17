@@ -11,8 +11,15 @@ $container = get_theme_mod( 'understrap_container_type' );
       rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.55)
     ), url(http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Free-School-opening-day-1963.jpg); background-size: cover; background-repeat: no-repeat;min-height: 500px;"">
-  <div class="container">
-    <h2 class="display-1">Farmville:<br/>Work.<br/>Live.<br/>Play.</h1>
+  <div class="container-fluid">
+    <nav id="hero-menu">
+      <ul>
+        <li>About</li>
+        <li>Visit</li>
+        <li>Donate</li>
+        <li>Sign-up</li>
+      </ul>
+    </nav>
   </div>
 </div>
 

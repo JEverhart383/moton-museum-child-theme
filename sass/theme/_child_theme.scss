@@ -1,4 +1,39 @@
 
+#hero-menu {
+  ul {
+    list-style-type: none;
+    li {
+      min-height: 100px;
+      font-size: 2em;
+    }
+  }
+}
+
+.bg-moton-eggplant {
+  background-color: $moton-eggplant;
+  color: #fff;
+}
+
+.text-moton-eggplant {
+  color: $moton-eggplant;
+}
+
+.text-moton-orange {
+  color: $moton-orange;
+}
+
+.text-moton-blue {
+  color: $moton-blue;
+}
+
+.text-moton-green {
+  color: $moton-green;
+}
+
+#wrapper-navbar nav.navbar {
+  border-bottom: 2px solid $moton-green;
+}
+
 #wrapper-footer-full {
   
   background-color: #1f1f1f;
