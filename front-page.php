@@ -10,7 +10,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="jumbotron jumbotron-fluid listing-hero" style="background-image: linear-gradient(
       rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.55)
-    ), url(https://www.sovaliving.com/wp-content/uploads/2016/09/Farmville-Downtown-9.jpg); background-size: cover; background-repeat: no-repeat;min-height: 500px;"">
+    ), url(http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Free-School-opening-day-1963.jpg); background-size: cover; background-repeat: no-repeat;min-height: 500px;"">
   <div class="container">
     <h2 class="display-1">Farmville:<br/>Work.<br/>Live.<br/>Play.</h1>
   </div>
@@ -21,12 +21,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
     <div class="row">
       <div class="col-sm-12">
-        <h3>SOVA Living</h3>
+        <h3>Moton</h3>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <h3>Featured Listings</h3>
+        <h3>Features</h3>
       </div>
     </div>
   </div><!-- #content -->
@@ -34,7 +34,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-        <h3>Free Home Value Report</h3>
+        <h3>CTA</h3>
         </div>
       </div>
     </div>
