@@ -13,3 +13,31 @@
     }
   }
 }
+
+.moton-nav-black {
+  background-color: #000 !important;
+  color: #FFF !important;
+  border: 1px solid lightgray;
+  border-bottom: 3px solid $moton-orange;
+  #main-menu {
+    a {
+      color: #FFF !important;
+      box-sizing: border-box;
+      &:hover {
+        border-bottom: 2px solid $moton-orange;
+      }
+    }
+  }
+}
+
+#hero-menu {
+  ul {
+    list-style-type: none;
+    li {
+      background-color: #FFF;
+      min-height: 100px;
+      max-width: 300px;
+      font-size: 2em;
+    }
+  }
+}

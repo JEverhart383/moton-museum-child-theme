@@ -13,7 +13,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     ), url(http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Free-School-opening-day-1963.jpg); background-size: cover; background-repeat: no-repeat;min-height: 500px;"">
   <div class="container-fluid">
     <nav id="hero-menu">
-      <ul>
+      <ul class="text-center">
         <li>About</li>
         <li>Visit</li>
         <li>Donate</li>

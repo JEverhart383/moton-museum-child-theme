@@ -11715,6 +11715,26 @@ figure.woocommerce-product-gallery__wrapper {
     .moton-nav #main-menu a:hover {
       border-bottom: 2px solid #8E8603; }
 
+.moton-nav-black {
+  background-color: #000 !important;
+  color: #FFF !important;
+  border: 1px solid lightgray;
+  border-bottom: 3px solid #C46819; }
+  .moton-nav-black #main-menu a {
+    color: #FFF !important;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .moton-nav-black #main-menu a:hover {
+      border-bottom: 2px solid #C46819; }
+
+#hero-menu ul {
+  list-style-type: none; }
+  #hero-menu ul li {
+    background-color: #FFF;
+    min-height: 100px;
+    max-width: 300px;
+    font-size: 2em; }
+
 #hero-menu ul {
   list-style-type: none; }
   #hero-menu ul li {
