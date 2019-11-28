@@ -29,6 +29,39 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<main class="site-main" id="main" role="main">
       <p>The point of these background textures is two-fold. First, since the Moton colors are not the most accessible, we can use CSS background images to incorporate them into CTA blocks throughout the site. This should reinforce the Moton brand, while also keeping things interesting and most importantly readable. Second, these background sections are hand drawn to evoke nostalgia and should contrast well with the imagery we will display throughout the site.</p>
+      <h2 class="mt-5">Sharp Triangle Brand Color Backgrounds</h2>
+      <div class="jumbotron jumbotron-fluid bg-image bg-moton-bold mt-5">
+          <div class="container">
+            <h1 class="display-4">Background Title</h1>
+            <div class="bg-image-content">
+              <p>Here is some additional content that may or may not contain an image or other CTAs</p>
+            </div>
+          </div>
+        </div>  
+      <div class="jumbotron jumbotron-fluid bg-image bg-triangles-brown-bg-1 mt-5">
+          <div class="container">
+            <h1 class="display-4">Background Title</h1>
+            <div class="bg-image-content">
+              <p>Here is some additional content that may or may not contain an image or other CTAs</p>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid bg-image bg-triangles-brown-bg-2 mt-5">
+          <div class="container">
+            <h1 class="display-4">Background Title</h1>
+            <div class="bg-image-content">
+              <p>Here is some additional content that may or may not contain an image or other CTAs</p>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid bg-image bg-triangles-white-bg mt-5">
+          <div class="container">
+            <h1 class="display-4">Background Title</h1>
+            <div class="bg-image-content">
+              <p>Here is some additional content that may or may not contain an image or other CTAs</p>
+            </div>
+          </div>
+        </div>
       <h2 class="mt-5">Moton Green Backgrounds</h2>
         <div class="jumbotron jumbotron-fluid bg-image bg-crosshatch-moton-green mt-5">
           <div class="container">

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="500px" viewBox="0 0 1024 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>triangles-brown-bg-1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="triangles-brown-bg-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#572600" x="0" y="0" width="1024" height="500"></rect>
+        <polygon id="Triangle" stroke="#8E8603" fill="#8E8603" fill-rule="nonzero" transform="translate(626.240393, -75.134225) rotate(-95.000000) translate(-626.240393, 75.134225) " points="626.240393 -284.134225 911.240393 133.865775 341.240393 133.865775"></polygon>
+        <polygon id="Triangle" stroke="#C46819" fill="#C46819" fill-rule="nonzero" transform="translate(854.132812, 97.476562) rotate(-56.000000) translate(-854.132812, -97.476562) " points="854.132812 -111.523438 1139.13281 306.476562 569.132812 306.476562"></polygon>
+        <polygon id="Triangle" stroke="#80A3B7" fill="#80A3B7" fill-rule="nonzero" points="1024 82 1309 500 739 500"></polygon>
+    </g>
+</svg>

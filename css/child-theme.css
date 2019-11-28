@@ -11616,7 +11616,6 @@ figure.woocommerce-product-gallery__wrapper {
 .bg-image h2,
 .bg-image h3,
 .bg-image .bg-image-content {
-  display: inline-block;
   background-color: #FFF;
   padding: .5em; }
 
@@ -11675,11 +11674,46 @@ figure.woocommerce-product-gallery__wrapper {
 .bg-triangles-moton-green {
   background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-green/triangles.png"); }
 
+.bg-moton-bold {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-bold-bg.svg");
+  background-size: cover;
+  min-height: 500px; }
+
+.bg-triangles-brown-bg-1 {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/triangles-brown-bg-1.svg");
+  background-size: cover;
+  min-height: 500px; }
+
+.bg-triangles-brown-bg-2 {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/triangles-brown-bg-2.svg");
+  background-size: cover;
+  min-height: 500px; }
+
+.bg-triangles-white-bg {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/triangles-white-bg.svg");
+  background-size: cover;
+  min-height: 500px; }
+
+.bg-triangles-moton-green {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-green/triangles.png"); }
+
 .bg-mudcloth-11-moton-green {
   background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-green/Mudcloth_11.png"); }
 
 .bg-mudcloth-9-moton-green {
   background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-green/Mudcloth_9.png"); }
+
+.moton-nav {
+  background-color: #FFFFFF !important;
+  color: #572600 !important;
+  border: 1px solid lightgray;
+  border-bottom: 3px solid #8E8603; }
+  .moton-nav #main-menu a {
+    color: #572600 !important;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .moton-nav #main-menu a:hover {
+      border-bottom: 2px solid #8E8603; }
 
 #hero-menu ul {
   list-style-type: none; }
