@@ -28,7 +28,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
     <div class="row">
       <div class="col-sm-12">
-        <h3>Moton</h3>
+        <h2>Visiting the Museum</h2>
+      </div>
+
+      <div class="col-sm-12">
+        <h2>About the Facility</h2>
+      </div>
+
+      <div class="col-sm-12">
+        <h2>Get Involved</h2>
       </div>
     </div>
     <div class="row">
