@@ -38,9 +38,9 @@ $container = get_theme_mod( 'understrap_container_type' );
               <h5 class="card-title"><?php echo $staff['full_name']?></h5>
               <h6 class="card-subtitle mb-2 text-muted"><?php echo $staff['position']?></h6>
               <?php if($staff['moton_resident_scholar'] === TRUE):?>
-              <span class="badge badge-pill badge-primary">Moton Resident Scholar</span>
+              <span class="badge badge-pill badge-primary mt-3">Moton Resident Scholar</span>
               <?php endif;?>
-              <p class="card-text">
+              <p class="card-text mt-3">
               <a href=""><i class="fa fa-phone"></i> <?php echo $staff['phone']?></a> <br>
               <a href=""><i class="fa fa-envelope"></i> <?php echo $staff['email']?></a>
               </p>
