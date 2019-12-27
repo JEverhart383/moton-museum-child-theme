@@ -16,7 +16,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="jumbotron jumbotron-fluid listing-hero">
   <div class="container">
-    <h1 class="display-4">Staff: <?php the_title(); ?> </h1>
+    <h1 class="display-4">Moton Museum Staff: <?php the_title(); ?> </h1>
   </div>
 </div>
 
@@ -27,12 +27,32 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row">
 
 			<div class="col-md-12 content-area" id="primary">
-
+      <?php $staff = assemble_staff_member_from_post($post); ?>
 				<main class="site-main" id="main" role="main">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title"><?php echo assemble_staff_member_from_post($post)['full_name']; ?></h5>
-              <?php echo get_field('position');?>
+          <div class="row">
+            <div class="col-lg-4 mt-3">
+              <img src="<?php echo $staff['headshot']['url']; ?>" alt="">
+            </div>
+            <div class="col-lg-8 mt-3">
+              <h2><?php echo $staff['full_name']?></h2>
+              <hr>
+              <h4 class="mb-2 text-muted"><?php echo $staff['position']?></h4>
+              <?php if($staff['moton_resident_scholar'] === TRUE):?>
+              <span class="badge badge-pill badge-primary">Moton Resident Scholar</span>
+              <?php endif;?>
+              <p class="card-text">
+              <?php echo $staff['phone']?><br>
+              <?php echo $staff['email']?>
+              </p>
+              <a href="<?php echo $staff['permalink']; ?>" class="btn btn-primary"><i class="fa fa-envelope"></i> Email First Name</a>
+              <a href="<?php echo $staff['permalink']; ?>" class="btn btn-primary"><i class="fa fa-phone"></i> Call First Name</a>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-12">
+              <h3>Biography</h3>
+              <hr>
+              <?php the_content(); ?>
             </div>
           </div>
         <?php endwhile; // end of the loop. ?>
