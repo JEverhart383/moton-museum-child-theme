@@ -1,0 +1,16 @@
+// Button Overrides
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-outline-white {
+  color: #fff;
+  border-color: #fff;
+
+  &:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+  }
+}

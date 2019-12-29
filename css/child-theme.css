@@ -11735,11 +11735,17 @@ figure.woocommerce-product-gallery__wrapper {
     max-width: 300px;
     font-size: 2em; }
 
-#hero-menu ul {
-  list-style-type: none; }
-  #hero-menu ul li {
-    min-height: 100px;
-    font-size: 2em; }
+.btn,
+.wpcf7 input[type=submit] {
+  border-radius: 0; }
+
+.btn-outline-white {
+  color: #fff;
+  border-color: #fff; }
+  .btn-outline-white:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff; }
 
 .text-moton-eggplant {
   color: #48182D; }
@@ -11753,6 +11759,12 @@ figure.woocommerce-product-gallery__wrapper {
 .text-moton-green {
   color: #8E8603; }
 
+.border-bottom-moton-eggplant {
+  border-bottom: 2px solid #48182D; }
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase; }
+
 #wrapper-navbar nav.navbar {
   border-bottom: 2px solid #8E8603; }
 
@@ -11765,15 +11777,18 @@ figure.woocommerce-product-gallery__wrapper {
 #wrapper-footer {
   display: none; }
 
-.listing-hero .container {
+.homepage-hero .container {
   color: #fff; }
 
 .cta-container {
   background-color: #1f1f1f;
   color: #fff; }
 
-.listing-hero {
-  background-color: #6c757d; }
+.homepage-hero {
+  min-height: 850px;
+  background-color: #6c757d;
+  color: #fff;
+  border-bottom: 7px solid #C46819; }
 
 /*
 * Use existing Bootstrap 4 classes and
