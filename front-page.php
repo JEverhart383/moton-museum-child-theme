@@ -42,11 +42,11 @@ $container = get_theme_mod( 'understrap_container_type' );
         <p>Here is some text regarding hours</p>
         <div class="row mt-3">
           <div class="col-lg-6">
-            <p>Open Everyday</p>
-            <p>Museum Address</p>
+            <h4> <i class="fa fa-clock-o text-moton-orange"></i> Open Everyday</h4>
+            <h4><i class="fa fa-map-marker text-moton-orange"></i> Museum Address</h4>
           </div>
           <div class="col-lg-6">
-            <p>Admission is free passes are required</p>
+            <h4> <i class="fa fa-ticket text-moton-orange"></i> Admission is free</h4>
           </div>
         </div>
       </div>
