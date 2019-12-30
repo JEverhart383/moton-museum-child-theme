@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5 {
 .cta-container {
   background-color: #1f1f1f;
   color: #fff;
+  min-height: 500px;
 }
 
 .homepage-hero {
@@ -39,4 +40,9 @@ h1, h2, h3, h4, h5 {
   background-color: #6c757d;
   color: #fff;
   border-bottom: 7px solid $moton-orange;
+}
+
+.alternating-tile-section .row .content-tile {
+  min-height: 350px;
+  background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)); 
 }

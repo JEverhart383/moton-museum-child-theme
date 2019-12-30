@@ -60,26 +60,47 @@ $container = get_theme_mod( 'understrap_container_type' );
         <a href="" class="btn btn-primary">Learn More</a>
       </div>
     </div>
-  
-  <!-- <div class="container-fluid cta-container">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-        <h3>CTA</h3>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
 </div><!-- #full-width-page-wrapper -->
-<div class="container-fluid cta-container">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-        <h3>CTA</h3>
-        </div>
+<div class="container-fluid cta-container mt-5" style="background-image: linear-gradient(
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.85)
+    ), url(http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Free-School-opening-day-1963.jpg); background-size: cover; background-repeat: no-repeat;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 mt-5">
+      <h3>Changable Headline Here?</h3>
+      <p>Here is some text about this CTA area, we will use this section to create some visual interest a prompt users to take action.</p>
+      <p><a href="" class="btn btn-warning">Here is a button</a> <a href="" class="btn btn-success">Another Button</a></p>
+
       </div>
     </div>
   </div>
+</div>
+<div class="container-fluid alternating-tile-section" >
+    <div class="row" style="background-image: url(http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Free-School-opening-day-1963.jpg); background-size: cover; background-repeat: no-repeat;">
+      <div class="col-lg-6"></div>
+      <div class="col-lg-6 content-tile text-center">
+        <h3 class="text-moton-eggplant mt-5">About The Museum</h3>
+        <p>Here is a decent sized paragraph about what you could see at the museum if you come and visit Moton</p>
+        <a href="" class="btn btn-primary">Learn More</a>
+      </div>
+  </div>
+  <div class="row" style="background-image: url(http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Free-School-opening-day-1963.jpg); background-size: cover; background-repeat: no-repeat;">
+      <div class="col-lg-6 content-tile text-center">
+        <h3 class="text-moton-eggplant mt-5">About The Museum</h3>
+        <p>Here is a decent sized paragraph about what you could see at the museum if you come and visit Moton</p>
+        <a href="" class="btn btn-primary">Learn More</a>
+      </div>
+      <div class="col-lg-6"></div>
+  </div>
+  <div class="row" style="background-image: url(http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Free-School-opening-day-1963.jpg); background-size: cover; background-repeat: no-repeat;">
+      <div class="col-lg-6"></div>
+      <div class="col-lg-6 content-tile text-center">
+        <h3 class="text-moton-eggplant mt-5">About The Museum</h3>
+        <p>Here is a decent sized paragraph about what you could see at the museum if you come and visit Moton</p>
+        <a href="" class="btn btn-primary">Learn More</a>
+      </div>
+  </div>
+</div>
 <?php endwhile; // end of the loop. ?>
 <?php get_footer(); ?>
