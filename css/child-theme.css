@@ -11762,6 +11762,14 @@ figure.woocommerce-product-gallery__wrapper {
 .border-bottom-moton-eggplant {
   border-bottom: 2px solid #48182D; }
 
+.moton-header {
+  color: #48182D;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #C46819; }
+  .moton-header a:hover {
+    text-decoration: none;
+    color: #48182D; }
+
 h1, h2, h3, h4, h5 {
   text-transform: uppercase; }
 

@@ -37,7 +37,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
     <div class="row mt-5">
       <div class="col-lg-12">
-        <h2 class="text-moton-eggplant border-bottom-moton-eggplant mb-5">Visiting The Museum</h2>
+        <h2 class="moton-header mb-5">Visiting The Museum</h2>
         <h3 class="mt-3">Extended Holiday Hours</h3>
         <p>Here is some text regarding hours</p>
         <div class="row mt-3">
@@ -67,8 +67,11 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
     <div class="row mt-5">
       <div class="col-lg-12">
-        <h2 class="text-moton-eggplant border-bottom-moton-eggplant mb-3">About The Museum</h2>
-        <p class="lead">“[The 1951 Moton Student Strike] marked the start of the modern civil rights movement . . . [and] forever changed the landscape of American education.”  – Don Baker, The Washington Post Magazine</p>
+        <h2 class="moton-header mb-3">About The Museum</h2>
+        <blockquote class="blockquote">
+        <p>[The 1951 Moton Student Strike] marked the start of the modern civil rights movement . . . [and] forever changed the landscape of American education.</p>
+        <footer class="blockquote-footer">Don Baker, <cite title="The Washington Post Magazine">The Washington Post Magazine</cite></footer>
+        </blockquote>
         <p>Farmville, Virginia’s former Robert Russa Moton High School, now a National Historic Landmark and museum, is the birthplace of America’s student-led civil rights revolution.</p>
         <a href="" class="btn btn-primary">Mission</a>
         <a href="" class="btn btn-primary">Board</a>

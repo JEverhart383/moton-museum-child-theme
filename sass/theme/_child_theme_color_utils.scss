@@ -19,3 +19,15 @@
 .border-bottom-moton-eggplant {
   border-bottom: 2px solid $moton-eggplant;
 }
+
+.moton-header {
+  color: $moton-eggplant;
+  padding-bottom: 5px;
+  border-bottom: 3px solid $moton-orange;
+  a {
+    &:hover {
+      text-decoration: none;
+      color: $moton-eggplant;
+    }
+  }
+}
