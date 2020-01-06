@@ -42,22 +42,37 @@ $container = get_theme_mod( 'understrap_container_type' );
         <p>Here is some text regarding hours</p>
         <div class="row mt-3">
           <div class="col-lg-6">
-            <h4> <i class="fa fa-clock-o text-moton-orange"></i> Open Everyday</h4>
-            <h4><i class="fa fa-map-marker text-moton-orange"></i> Museum Address</h4>
+            <h5><i class="fa fa-clock-o text-moton-orange"></i> Noon-4:00 p.m., Monday-Saturday</h5>
+            <h5 class="mt-3"><i class="fa fa-map-marker text-moton-orange"></i>        Museum Address</h5>
+            <div class="icon-offset">
+              <address>
+                900 Griffin Blvd
+                <br> 
+                Farmville, VA 23901
+              </address>
+              <p>(434) 315-8775 </p>
+            </div>
           </div>
           <div class="col-lg-6">
-            <h4> <i class="fa fa-ticket text-moton-orange"></i> Admission is free</h4>
+            <h5><i class="fa fa-ticket text-moton-orange"></i> Admission is free</h5>
+            <div class="icon-offset">
+              <p>Admission is free for the general public. To schedule a guided tour for a group of 5 or more, we ask that you contact museum staff in advance using the information available at the link below.</p>
+              <a class="btn btn-primary" href="/visit">More Info</a>
+            </div>
           </div>
+        </div>
+        <div class="row mt-3">
         </div>
       </div>
     </div>
     <div class="row mt-5">
       <div class="col-lg-12">
         <h2 class="text-moton-eggplant border-bottom-moton-eggplant mb-3">About The Museum</h2>
-        <p>Here is a paragraph of about text regarding the museum</p>
-        <a href="" class="btn btn-primary">Learn More</a>
-        <a href="" class="btn btn-primary">Plan Your Visit</a>
-        <a href="" class="btn btn-primary">Learn More</a>
+        <p class="lead">“[The 1951 Moton Student Strike] marked the start of the modern civil rights movement . . . [and] forever changed the landscape of American education.”  – Don Baker, The Washington Post Magazine</p>
+        <p>Farmville, Virginia’s former Robert Russa Moton High School, now a National Historic Landmark and museum, is the birthplace of America’s student-led civil rights revolution.</p>
+        <a href="" class="btn btn-primary">Mission</a>
+        <a href="" class="btn btn-primary">Board</a>
+        <a href="" class="btn btn-primary">Council</a>
       </div>
     </div>
 </div><!-- #full-width-page-wrapper -->
