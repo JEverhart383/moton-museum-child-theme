@@ -35,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
           </div>
           <div class="row mt-5">
             <div class="col">
-              <h2 class="moton-header"> <a href="#hours-and-admissions">Hours and Admissions</a></h2>
+              <h2 class="moton-header"> <a id="hours-and-admissions">Hours and Admissions</a></h2>
               <h5><i class="mt-3 fa fa-clock-o text-moton-orange"></i> Guest Hours</h5>
               <p>Noon-4:00 p.m., Monday-Saturday, and by appointment.</p>
               <h5><i class="mt-3 fa fa-briefcase text-moton-orange"></i> Office Hours</h5>
@@ -51,7 +51,7 @@ $container = get_theme_mod( 'understrap_container_type' );
           </div>
           <div class="row mt-5">
             <div class="col">
-              <h2 class="moton-header">Getting Here</h2>
+              <h2 class="moton-header"><a id="directions">Getting Here</a></h2>
               <div class="row mt-3">
                 <div class="col-lg-6">
                   <h5><i class="mt-3 fa fa-map-marker text-moton-orange"></i> Physical Location</h5>
@@ -69,6 +69,11 @@ $container = get_theme_mod( 'understrap_container_type' );
           <div class="row mt-5">
             <div class="col">
             <h2 class="moton-header">Gallery Sneak Peak</h2>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col">
+            <h2 class="moton-header">Code of Conduct</h2>
             </div>
           </div>
         <?php endwhile; // end of the loop. ?>
