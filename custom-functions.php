@@ -5,11 +5,17 @@ require_once dirname(__FILE__) . '/post-types/staff.php';
 if( function_exists('acf_add_options_page') ) {
 	
 	acf_add_options_page(array(
-		'page_title' 	=> 'Theme General Settings',
-		'menu_title'	=> 'Theme Settings',
-		'menu_slug' 	=> 'theme-general-settings',
+		'page_title' 	=> 'Moton Theme General Settings',
+		'menu_title'	=> 'Moton Settings',
+		'menu_slug' 	=> 'moton-theme-general-settings',
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Moton Theme CTA Settings',
+		'menu_title'	=> 'CTA Settings',
+		'parent_slug' 	=> 'moton-theme-general-settings'
 	));
 	
 }

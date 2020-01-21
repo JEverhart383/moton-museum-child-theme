@@ -38,8 +38,12 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div class="row mt-5">
       <div class="col-lg-12">
         <h2 class="moton-header mb-5">Visiting The Museum</h2>
-        <h3 class="mt-3">Extended Holiday Hours</h3>
-        <p>Here is some text regarding hours</p>
+        <?php if (get_field('display_hours_alert', 'option') == True): ?>
+          <div class="alert alert-primary" role="alert">
+            <h3 class="mt-3"><?php the_field('hours_alert_heading', 'option'); ?></h3>
+            <p><?php the_field('hours_alert_text', 'option'); ?></p>
+          </div>
+        <?php endif; ?>
         <div class="row mt-3">
           <div class="col-lg-6">
             <h5><i class="fa fa-clock-o text-moton-orange"></i> Noon-4:00 p.m., Monday-Saturday</h5>
@@ -79,21 +83,32 @@ $container = get_theme_mod( 'understrap_container_type' );
       </div>
     </div>
 </div><!-- #full-width-page-wrapper -->
-<div class="container-fluid cta-container mt-5" style="background-image: linear-gradient(
+<!-- <div class="container-fluid cta-container mt-5" style="background-image: linear-gradient(
       rgba(0, 0, 0, 0.85),
       rgba(0, 0, 0, 0.85)
-    ), url(http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Free-School-opening-day-1963.jpg); background-size: cover; background-repeat: no-repeat;">
+    ), url(<?php the_field('cta_background_image', 'option'); ?>); background-size: cover; background-repeat: no-repeat;">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 mt-5">
-      <h3>Changable Headline Here?</h3>
-      <p>Here is some text about this CTA area, we will use this section to create some visual interest a prompt users to take action.</p>
-      <p><a href="" class="btn btn-warning">Here is a button</a> <a href="" class="btn btn-success">Another Button</a></p>
+      <h3><?php the_field('cta_headline', 'option'); ?></h3>
+      <p><?php the_field('cta_text', 'option'); ?></p>
+      <p>
+        <a href="<?php the_field('cta_primary_button_link', 'option'); ?>" class="btn btn-warning">
+          <?php the_field('cta_primary_button_text', 'option'); ?>
+        </a> 
+        <a href="<?php the_field('cta_secondary_button_link', 'option'); ?>" class="btn btn-success">
+          <?php the_field('cta_secondary_button_text', 'option'); ?>
+        </a>
+        </p>
 
       </div>
     </div>
   </div>
-</div>
+</div> -->
+<?php 
+  include_once get_stylesheet_directory() . '/partials/configurable-cta.php';
+?>
+
 <div class="container-fluid alternating-tile-section" >
     <div class="row" style="background-image: url(http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Free-School-opening-day-1963.jpg); background-size: cover; background-repeat: no-repeat;">
       <div class="col-lg-6"></div>
