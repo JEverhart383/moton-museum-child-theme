@@ -1,6 +1,8 @@
 <?php
 
 require_once dirname(__FILE__) . '/post-types/staff.php';
+require_once dirname(__FILE__) . '/post-types/gallery.php';
+
 
 if( function_exists('acf_add_options_page') ) {
 	
