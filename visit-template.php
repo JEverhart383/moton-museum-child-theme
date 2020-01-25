@@ -92,7 +92,7 @@ $container = get_theme_mod( 'understrap_container_type' );
       rgba(0, 0, 0, 0.75)
     ), url(<?php echo get_the_post_thumbnail_url();?>); background-size: cover; background-repeat: no-repeat;"">
                 <!-- <img src="<?php ?>" class="d-block w-100" alt="..."> -->
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-block">
                   <h5><?php the_title(); ?></h5>
                   <p><?php the_content(); ?></p>
                 </div>
