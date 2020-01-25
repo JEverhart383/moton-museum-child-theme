@@ -69,7 +69,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="col">
             <h2 class="moton-header">Gallery Sneak Peak</h2>
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner" id="gallery-carousel">
             <?php 
               $gallery_query = new WP_Query(array(
                 'post_type' => 'gallery', 
@@ -87,8 +87,11 @@ $container = get_theme_mod( 'understrap_container_type' );
               }
               $gallery_index++;
             ?>
-              <div class="<?php echo $carousel_class; ?>">
-                <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="d-block w-100" alt="...">
+              <div class="<?php echo $carousel_class; ?>" style="background-image: linear-gradient(
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
+    ), url(<?php echo get_the_post_thumbnail_url();?>); background-size: cover; background-repeat: no-repeat;"">
+                <!-- <img src="<?php ?>" class="d-block w-100" alt="..."> -->
                 <div class="carousel-caption d-none d-md-block">
                   <h5><?php the_title(); ?></h5>
                   <p><?php the_content(); ?></p>
@@ -192,4 +195,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div><!-- #content -->
 
 </div><!-- #full-width-page-wrapper -->
+<?php 
+  include_once get_stylesheet_directory() . '/partials/configurable-cta.php';
+?>
 <?php get_footer(); ?>
