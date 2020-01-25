@@ -67,56 +67,55 @@ $container = get_theme_mod( 'understrap_container_type' );
           </div>
           <div class="row mt-5">
             <div class="col">
-            <h2 class="moton-header">Gallery Sneak Peak</h2>
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" id="gallery-carousel">
-            <?php 
-              $gallery_query = new WP_Query(array(
-                'post_type' => 'gallery', 
-                'posts_per_page' => -1,
-                'post_status' => 'publish',
-                'order_by' => 'menu_order',
-                'order' => 'ASC'
-              ));
-              $gallery_index = 0;
-              while($gallery_query->have_posts()): $gallery_query->the_post();
-            ?>
-            <?php 
-              $carousel_class = "carousel-item";
-              if ($gallery_index == 0) {
-                $carousel_class = "carousel-item active";
-              }
-              $gallery_index++;
-            ?>
-              <div class="<?php echo $carousel_class; ?>" style="background-image: linear-gradient(
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0.75)
-    ), url(<?php echo get_the_post_thumbnail_url();?>); background-size: cover; background-repeat: no-repeat;"">
-                <!-- <img src="<?php ?>" class="d-block w-100" alt="..."> -->
-                <div class="carousel-caption d-block">
-                  <h5><?php the_title(); ?></h5>
-                  <p><?php the_content(); ?></p>
+              <h2 class="moton-header mb-3"><a id="explore-galleries">Explore Galleries</a></h2>
+              <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" id="gallery-carousel">
+                  <?php 
+                  $gallery_query = new WP_Query(array(
+                    'post_type' => 'gallery', 
+                    'posts_per_page' => -1,
+                    'post_status' => 'publish',
+                    'order_by' => 'menu_order',
+                    'order' => 'ASC'
+                  ));
+                  $gallery_index = 0;
+                  while($gallery_query->have_posts()): $gallery_query->the_post();
+                  ?>
+                  <?php 
+                    $carousel_class = "carousel-item";
+                    if ($gallery_index == 0) {
+                      $carousel_class = "carousel-item active";
+                    }
+                    $gallery_index++;
+                  ?>
+                  <div class="<?php echo $carousel_class; ?>" style="background-image: linear-gradient(
+                      rgba(0, 0, 0, 0.75),
+                      rgba(0, 0, 0, 0.75)
+                    ), url(<?php echo get_the_post_thumbnail_url();?>); background-size: cover; background-repeat: no-repeat;">
+                    <div class="carousel-caption d-block">
+                      <h5><?php the_title(); ?></h5>
+                      <p><?php the_content(); ?></p>
+                    </div>
+                  </div>
+                  <?php 
+                  endwhile;
+                  wp_reset_postdata();
+                  ?>
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
-              <?php 
-              endwhile;
-              wp_reset_postdata();
-              ?>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
             </div>
           </div>
           <div class="row mt-5">
             <div class="col">
-            <h2 class="moton-header">Civil Right Tours</h2>
+            <h2 class="moton-header"><a id="civil-rights-tours">Civil Right Tours</a></h2>
                 <div class="card w-100 mt-5">
                   <div class="card-body">
                     <div class="row">
@@ -181,7 +180,7 @@ $container = get_theme_mod( 'understrap_container_type' );
           </div>
           <div class="row mt-5">
             <div class="col">
-            <h2 class="moton-header">Museum Rules & Regulations</h2>
+            <h2 class="moton-header"><a id="rules-and-policies">Museum Rules & Policies</h2>
             <?php the_field('policies'); ?>
             </div>
           </div>
