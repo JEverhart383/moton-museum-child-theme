@@ -61,7 +61,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <h5><i class="fa fa-ticket text-moton-orange"></i> Admission is free</h5>
             <div class="icon-offset">
               <p>Admission is free for the general public. To schedule a guided tour for a group of 5 or more, we ask that you contact museum staff in advance using the information available at the link below.</p>
-              <a class="btn btn-primary" href="/visit">More Info</a>
+              <a class="btn btn-primary" href="/visit">Plan Your Visit</a>
             </div>
           </div>
         </div>
@@ -83,44 +83,19 @@ $container = get_theme_mod( 'understrap_container_type' );
       </div>
     </div>
 </div><!-- #full-width-page-wrapper -->
-<!-- <div class="container-fluid cta-container mt-5" style="background-image: linear-gradient(
-      rgba(0, 0, 0, 0.85),
-      rgba(0, 0, 0, 0.85)
-    ), url(<?php the_field('cta_background_image', 'option'); ?>); background-size: cover; background-repeat: no-repeat;">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 mt-5">
-      <h3><?php the_field('cta_headline', 'option'); ?></h3>
-      <p><?php the_field('cta_text', 'option'); ?></p>
-      <p>
-        <a href="<?php the_field('cta_primary_button_link', 'option'); ?>" class="btn btn-warning">
-          <?php the_field('cta_primary_button_text', 'option'); ?>
-        </a> 
-        <a href="<?php the_field('cta_secondary_button_link', 'option'); ?>" class="btn btn-success">
-          <?php the_field('cta_secondary_button_text', 'option'); ?>
-        </a>
-        </p>
-
-      </div>
-    </div>
-  </div>
-</div> -->
-<?php 
-  include_once get_stylesheet_directory() . '/partials/configurable-cta.php';
-?>
 
 <div class="container-fluid alternating-tile-section" >
     <div class="row" style="background-image: url(http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Free-School-opening-day-1963.jpg); background-size: cover; background-repeat: no-repeat;">
       <div class="col-lg-6"></div>
       <div class="col-lg-6 content-tile text-center">
-        <h3 class="text-moton-eggplant mt-5">About The Museum</h3>
+        <h3 class="text-moton-eggplant mt-5">Learn</h3>
         <p>Here is a decent sized paragraph about what you could see at the museum if you come and visit Moton</p>
         <a href="" class="btn btn-primary">Learn More</a>
       </div>
   </div>
   <div class="row" style="background-image: url(http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Free-School-opening-day-1963.jpg); background-size: cover; background-repeat: no-repeat;">
       <div class="col-lg-6 content-tile text-center">
-        <h3 class="text-moton-eggplant mt-5">About The Museum</h3>
+        <h3 class="text-moton-eggplant mt-5">Events</h3>
         <p>Here is a decent sized paragraph about what you could see at the museum if you come and visit Moton</p>
         <a href="" class="btn btn-primary">Learn More</a>
       </div>
@@ -129,11 +104,14 @@ $container = get_theme_mod( 'understrap_container_type' );
   <div class="row" style="background-image: url(http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Free-School-opening-day-1963.jpg); background-size: cover; background-repeat: no-repeat;">
       <div class="col-lg-6"></div>
       <div class="col-lg-6 content-tile text-center">
-        <h3 class="text-moton-eggplant mt-5">About The Museum</h3>
+        <h3 class="text-moton-eggplant mt-5">Give</h3>
         <p>Here is a decent sized paragraph about what you could see at the museum if you come and visit Moton</p>
         <a href="" class="btn btn-primary">Learn More</a>
       </div>
   </div>
 </div>
+<?php 
+  include_once get_stylesheet_directory() . '/partials/configurable-cta.php';
+?>
 <?php endwhile; // end of the loop. ?>
 <?php get_footer(); ?>
