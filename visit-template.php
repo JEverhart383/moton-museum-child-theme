@@ -75,7 +75,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                 'post_type' => 'gallery', 
                 'posts_per_page' => -1,
                 'post_status' => 'publish',
-                'order_by' => 'menu_order'
+                'order_by' => 'menu_order',
+                'order' => 'ASC'
               ));
               $gallery_index = 0;
               while($gallery_query->have_posts()): $gallery_query->the_post();
