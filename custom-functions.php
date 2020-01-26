@@ -47,4 +47,12 @@ function assemble_staff_member_from_post($post) {
 	);
 }
 
+function get_page_by_template($template = '') {
+	$args = array(
+		'meta_key' => '_wp_page_template',
+		'meta_value' => $template
+	);
+	return get_pages($args); 
+}
+
 

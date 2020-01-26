@@ -83,30 +83,34 @@ $container = get_theme_mod( 'understrap_container_type' );
       </div>
     </div>
 </div><!-- #full-width-page-wrapper -->
-
-<div class="container-fluid alternating-tile-section" >
-    <div class="row" style="background-image: url(http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Free-School-opening-day-1963.jpg); background-size: cover; background-repeat: no-repeat;">
+<?php 
+$give_page = get_page_by_template('give-template.php')[0];
+$learn_page = get_page_by_template('learn-template.php')[0];
+$events_page = get_page_by_template('events-template.php')[0];
+?>
+<div class="container-fluid alternating-tile-section mt-5">
+    <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($learn_page->post_id); ?>); background-size: cover; background-repeat: no-repeat;">
       <div class="col-lg-6"></div>
       <div class="col-lg-6 content-tile text-center">
-        <h3 class="text-moton-eggplant mt-5">Learn</h3>
-        <p>Here is a decent sized paragraph about what you could see at the museum if you come and visit Moton</p>
-        <a href="" class="btn btn-primary">Learn More</a>
+        <h3 class="text-moton-eggplant mt-5"><?php echo $learn_page->post_title; ?></h3>
+        <p><?php echo $learn_page->post_content; ?></p>
+        <a href="<?php echo get_the_permalink($learn_page->post_id); ?>" class="btn btn-primary">Learn More</a>
       </div>
   </div>
-  <div class="row" style="background-image: url(http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Free-School-opening-day-1963.jpg); background-size: cover; background-repeat: no-repeat;">
+  <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($events_page->post_id); ?>); background-size: cover; background-repeat: no-repeat;">
       <div class="col-lg-6 content-tile text-center">
-        <h3 class="text-moton-eggplant mt-5">Events</h3>
-        <p>Here is a decent sized paragraph about what you could see at the museum if you come and visit Moton</p>
-        <a href="" class="btn btn-primary">Learn More</a>
+        <h3 class="text-moton-eggplant mt-5"><?php echo $events_page->post_title; ?></h3>
+        <p><?php echo $events_page->post_content; ?></p>
+        <a href="<?php echo get_the_permalink($events_page->post_id); ?>" class="btn btn-primary">Learn More</a>
       </div>
       <div class="col-lg-6"></div>
   </div>
-  <div class="row" style="background-image: url(http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Free-School-opening-day-1963.jpg); background-size: cover; background-repeat: no-repeat;">
+  <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($give_page->post_id); ?>); background-size: cover; background-repeat: no-repeat;">
       <div class="col-lg-6"></div>
       <div class="col-lg-6 content-tile text-center">
-        <h3 class="text-moton-eggplant mt-5">Give</h3>
-        <p>Here is a decent sized paragraph about what you could see at the museum if you come and visit Moton</p>
-        <a href="" class="btn btn-primary">Learn More</a>
+        <h3 class="text-moton-eggplant mt-5"><?php echo $give_page->post_title; ?></h3>
+        <p><?php echo $give_page->post_content; ?></p>
+        <a href="<?php echo get_the_permalink($give_page->post_id); ?>" class="btn btn-primary mb-3">Learn More</a>
       </div>
   </div>
 </div>

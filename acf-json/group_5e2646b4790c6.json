@@ -76,6 +76,25 @@
             "placeholder": ""
         },
         {
+            "key": "field_5e2c713f6f8a0",
+            "label": "Display Secondary Button",
+            "name": "display_secondary_button",
+            "type": "true_false",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_5e264761d8186",
             "label": "CTA Secondary Button Text",
             "name": "cta_secondary_button_text",
@@ -152,5 +171,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1579886603
+    "modified": 1579970914
 }
