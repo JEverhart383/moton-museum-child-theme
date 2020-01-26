@@ -87,6 +87,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 $give_page = get_page_by_template('give-template.php')[0];
 $learn_page = get_page_by_template('learn-template.php')[0];
 $events_page = get_page_by_template('events-template.php')[0];
+var_dump($events_page);
 ?>
 <div class="container-fluid alternating-tile-section mt-5">
     <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($learn_page->post_id); ?>); background-size: cover; background-repeat: no-repeat;">
