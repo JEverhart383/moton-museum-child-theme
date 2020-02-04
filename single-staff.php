@@ -14,7 +14,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <?php while ( have_posts() ) : the_post(); ?>
-<div class="jumbotron jumbotron-fluid listing-hero">
+<div class="jumbotron jumbotron-fluid listing-hero bg-triangles-brown-bg-1">
   <div class="container">
     <h1 class="display-4">Moton Museum Staff: <?php the_title(); ?> </h1>
   </div>

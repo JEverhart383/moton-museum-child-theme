@@ -11694,7 +11694,8 @@ figure.woocommerce-product-gallery__wrapper {
 .bg-triangles-brown-bg-1 {
   background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/triangles-brown-bg-1.svg");
   background-size: cover;
-  min-height: 500px; }
+  min-height: 250px;
+  color: #fff; }
 
 .bg-triangles-brown-bg-2 {
   background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/triangles-brown-bg-2.svg");

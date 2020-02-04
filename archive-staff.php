@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Single Listing 
+ * Template Name: Archive Staff
  *
  * Template for displaying a page without sidebar even if a sidebar widget is published.
  *
@@ -13,9 +13,9 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
-<div class="jumbotron jumbotron-fluid listing-hero">
+<div class="jumbotron jumbotron-fluid listing-hero bg-triangles-brown-bg-1" style="text-color: #fff;">
   <div class="container">
-    <h1 class="display-4">Staff</h1>
+    <h1 class="display-4" >Staff</h1>
   </div>
 </div>
 
@@ -41,8 +41,8 @@ $container = get_theme_mod( 'understrap_container_type' );
               <span class="badge badge-pill badge-primary mt-3">Moton Resident Scholar</span>
               <?php endif;?>
               <p class="card-text mt-3">
-              <a href=""><i class="fa fa-phone"></i> <?php echo $staff['phone']?></a> <br>
-              <a href=""><i class="fa fa-envelope"></i> <?php echo $staff['email']?></a>
+              <i class="fa fa-phone"></i> <?php echo $staff['phone']?><br>
+              <a href="mailto:<?php $staff['email']?>"><i class="fa fa-envelope"></i> <?php echo $staff['email']?></a>
               </p>
               <a href="<?php echo $staff['permalink']; ?>" class="btn btn-primary">Read Bio</a>
             </div>
