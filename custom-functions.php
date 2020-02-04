@@ -57,7 +57,7 @@ function get_page_by_template($template = '') {
 
 
 function moton_filter_pre_get_posts( $query ) {
-	if ( ! is_main_query() ) {
+	if ( ! $query->is_main_query() ) {
 			return $query;
 	} else {
 			if ( $query->get('post_type') === 'staff' ) {
