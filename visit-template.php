@@ -14,7 +14,10 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <?php while ( have_posts() ) : the_post(); ?>
-<div class="jumbotron jumbotron-fluid listing-hero">
+<div class="jumbotron jumbotron-fluid template-hero" style="background-image: linear-gradient(
+  rgba(0, 0, 0, 0.65),
+  rgba(0, 0, 0, 0.65)
+), url(<?php echo get_the_post_thumbnail_url(); ?>); background-size: cover; background-repeat: no-repeat;">
 <div class="container">
     <h1 class="display-4"><?php the_title(); ?> </h1>
   </div>
