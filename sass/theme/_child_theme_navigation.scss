@@ -49,3 +49,15 @@
     width: 145px;
   }
 }
+
+@media (min-width: 768px){
+  .navbar-expand-md .navbar-nav .nav-link {
+      padding-right: 1rem;
+      padding-left: 1rem;
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
+    
+  }
+}

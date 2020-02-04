@@ -11753,6 +11753,14 @@ figure.woocommerce-product-gallery__wrapper {
   .navbar-brand.custom-logo-link img {
     width: 145px; }
 
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-weight: bold; }
+    .navbar-expand-md .navbar-nav .nav-link:hover {
+      text-decoration: underline; } }
+
 .btn,
 .wpcf7 input[type=submit] {
   border-radius: 0; }
