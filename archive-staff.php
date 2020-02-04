@@ -41,8 +41,10 @@ $container = get_theme_mod( 'understrap_container_type' );
               <span class="badge badge-pill badge-primary mt-3">Moton Resident Scholar</span>
               <?php endif;?>
               <p class="card-text mt-3">
-              <i class="fa fa-phone"></i> <?php echo $staff['phone']?><br>
-              <a href="mailto:<?php $staff['email']?>"><i class="fa fa-envelope"></i> <?php echo $staff['email']?></a>
+              <?php if ($staff['phone']): ?>
+                <i class="fa fa-phone"></i> <?php echo $staff['phone']?><br>
+              <?php endif; ?>
+              <a href="mailto:<?php echo $staff['email']?>"><i class="fa fa-envelope"></i> <?php echo $staff['email']?></a>
               </p>
               <a href="<?php echo $staff['permalink']; ?>" class="btn btn-primary">Read Bio</a>
             </div>

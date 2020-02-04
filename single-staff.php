@@ -41,11 +41,11 @@ $container = get_theme_mod( 'understrap_container_type' );
               <span class="badge badge-pill badge-primary">Moton Resident Scholar</span>
               <?php endif;?>
               <p class="card-text">
-              <?php echo $staff['phone']?><br>
-              <?php echo $staff['email']?>
+              <?php if ($staff['phone']): ?>
+                <i class="fa fa-phone"></i> <?php echo $staff['phone']?><br>
+              <?php endif; ?>
+              <a href="mailto:<?php echo $staff['email']?>"><i class="fa fa-envelope"></i> <?php echo $staff['email']?></a>
               </p>
-              <a href="<?php echo $staff['permalink']; ?>" class="btn btn-primary"><i class="fa fa-envelope"></i> Email First Name</a>
-              <a href="<?php echo $staff['permalink']; ?>" class="btn btn-primary"><i class="fa fa-phone"></i> Call First Name</a>
             </div>
           </div>
           <div class="row mt-5">
