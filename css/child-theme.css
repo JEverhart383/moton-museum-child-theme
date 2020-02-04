@@ -11747,6 +11747,12 @@ figure.woocommerce-product-gallery__wrapper {
     max-width: 300px;
     font-size: 2em; }
 
+.navbar-brand.custom-logo-link {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+  .navbar-brand.custom-logo-link img {
+    width: 145px; }
+
 .btn,
 .wpcf7 input[type=submit] {
   border-radius: 0; }
@@ -11795,7 +11801,8 @@ h1, h2, h3, h4, h5 {
 #wrapper-footer {
   display: none; }
 
-.homepage-hero .container {
+.homepage-hero .container,
+.template-hero {
   color: #fff; }
 
 .cta-container {
