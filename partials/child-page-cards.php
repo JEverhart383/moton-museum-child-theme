@@ -3,7 +3,7 @@
 $child_page_query = new WP_Query(array(
   'post_type' => 'page',
   'posts_per_page' => -1,
-  'post_parent' => $post->ID,
+  'post_parent' => $post ? $post->ID : $post_id_to_query ,
   'order_by' => 'menu_order',
   'order' => 'ASC'
 ));
