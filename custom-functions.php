@@ -56,3 +56,16 @@ function get_page_by_template($template = '') {
 }
 
 
+function moton_filter_pre_get_posts( $query ) {
+	if ( ! is_main_query() ) {
+			return $query;
+	} else {
+			if ( $query->get('post_type') === 'staff' ) {
+					$query->set('posts_per_page', -1 );
+			}
+			return $query;
+	}
+}
+add_filter( 'pre_get_posts', 'moton_filter_pre_get_posts' );
+
+
