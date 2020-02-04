@@ -89,28 +89,28 @@ $learn_page = get_page_by_template('learn-template.php')[0];
 $events_page = get_page_by_template('events-template.php')[0];
 ?>
 <div class="container-fluid alternating-tile-section mt-5">
-    <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($learn_page->post_id); ?>); background-size: cover; background-repeat: no-repeat;">
+    <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($learn_page->ID); ?>); background-size: cover; background-repeat: no-repeat;">
       <div class="col-lg-6"></div>
       <div class="col-lg-6 content-tile text-center">
         <h3 class="text-moton-eggplant mt-5"><?php echo $learn_page->post_title; ?></h3>
         <p><?php echo $learn_page->post_content; ?></p>
-        <a href="<?php echo get_the_permalink($learn_page->post_id); ?>" class="btn btn-primary">Learn More</a>
+        <a href="<?php echo get_the_permalink($learn_page->ID); ?>" class="btn btn-primary">Learn More</a>
       </div>
   </div>
-  <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($events_page->post_id); ?>); background-size: cover; background-repeat: no-repeat;">
+  <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($events_page->ID); ?>); background-size: cover; background-repeat: no-repeat;">
       <div class="col-lg-6 content-tile text-center">
         <h3 class="text-moton-eggplant mt-5"><?php echo $events_page->post_title; ?></h3>
         <p><?php echo $events_page->post_content; ?></p>
-        <a href="<?php echo get_the_permalink($events_page->post_id); ?>" class="btn btn-primary">Learn More</a>
+        <a href="<?php echo get_the_permalink($events_page->ID); ?>" class="btn btn-primary">Learn More</a>
       </div>
       <div class="col-lg-6"></div>
   </div>
-  <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($give_page->post_id); ?>); background-size: cover; background-repeat: no-repeat;">
+  <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($give_page->ID); ?>); background-size: cover; background-repeat: no-repeat;">
       <div class="col-lg-6"></div>
       <div class="col-lg-6 content-tile text-center">
         <h3 class="text-moton-eggplant mt-5"><?php echo $give_page->post_title; ?></h3>
         <p><?php echo $give_page->post_content; ?></p>
-        <a href="<?php echo get_the_permalink($give_page->post_id); ?>" class="btn btn-primary mb-3">Learn More</a>
+        <a href="<?php echo get_the_permalink($give_page->ID); ?>" class="btn btn-primary mb-3">Learn More</a>
       </div>
   </div>
 </div>
@@ -118,4 +118,7 @@ $events_page = get_page_by_template('events-template.php')[0];
   include_once get_stylesheet_directory() . '/partials/configurable-cta.php';
 ?>
 <?php endwhile; // end of the loop. ?>
+<div class="container-fluid text-center">
+  <img src="<?php echo get_stylesheet_directory_uri() . '/images/motonmuseum_affiliate_banner.jpg'; ?>" alt="" class="fluid mt-3 mb-3">
+</div>
 <?php get_footer(); ?>

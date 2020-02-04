@@ -15,7 +15,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="jumbotron jumbotron-fluid listing-hero">
-  <div class="container">
+<div class="container">
     <h1 class="display-4"><?php the_title(); ?> </h1>
   </div>
 </div>
@@ -56,7 +56,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                   <h5><i class="mt-3 fa fa-map-marker text-moton-orange"></i> Physical Location</h5>
                   <address>900 Griffin Blvd,<br>
                   Farmville, Virginia 23901</address>
-                  <a class="btn btn-primary btn-block mt-5" href="https://www.google.com/maps/dir//Robert+Russa+Moton+Museum,+900+Griffin+Blvd,+Farmville,+VA+23901/@37.2914659,-78.3977747,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89b24ec53d7fe503:0xac305f04720cc7e5!2m2!1d-78.3976322!2d37.291384"><i class="fa fa-map-signs"></i> Click Here For Directions</a>
+                  <a class="btn btn-primary btn-block mt-5" href="https://www.google.com/maps/dir//Robert+Russa+Moton+Museum,+900+Griffin+Blvd,+Farmville,+VA+23901/@37.2914659,-78.3977747,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89b24ec53d7fe503:0xac305f04720cc7e5!2m2!1d-78.3976322!2d37.291384">Get Directions</a>
                   <p class="mt-5 text-small">Looking for places to stay, restaurants to try and fun activities to make your trip to Farmville memorable? Check out <a href="visitfarmville.com">visitfarmville.com.</a></p>
                 </div>
                 <div class="col-lg-6">
@@ -131,7 +131,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                           This walking tour guides you to sites in downtown Farmville significant to this history between 1951 and 1964. The two-mile route is designed to begin and end at the Moton Museum and takes you along Main Street, High Street, and Griffin Boulevard, but you can begin and end the tour at any point. Downtown Farmville has changed dramatically since the 1960s. We encourage you to explore its shops and cultural attractions as you engage with its fascinating past.
                           Sites on the tour are identified by a Civil Rights Walking Tour logo on the sidewalk.
                         </p>
-                        <a href="https://civilrightstour.motonmuseum.org/" target="_blank" class="btn btn-primary btn-block"><i class="fa fa-location-arrow"></i> Go Explore</a>
+                        <a href="https://civilrightstour.motonmuseum.org/" target="_blank" class="btn btn-primary btn-block">Explore</a>
                       </div>
                     </div>
                   </div>
@@ -150,7 +150,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <p>
                           "The fight for American civil rights spanned decades, cities and states – from Topeka, Kansas, to Memphis, Tennessee, from Atlanta, Georgia, to Selma and Birmingham, and all the way to Washington, D.C. Chart the course of the Civil Rights Movement through the Civil Rights Trail that begins with the site of school integration and takes you to the scene of Bloody Sunday and finally the Supreme Court of the United States."
                         </p>
-                        <a href="https://civilrightstrail.com/" target="_blank" class="btn btn-primary btn-block"> Learn More</a>
+                        <a href="https://civilrightstrail.com/" target="_blank" class="btn btn-primary btn-block"> Explore</a>
                       </div>
                     </div>
                   </div>
@@ -169,19 +169,13 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <p>
                           "Among the many ways Virginia has led the nation, its education heritage is worthy of deeper understanding. The free public education system our country now enjoys has its roots here in this region, where the right to equal education for all was the subject of challenge, debate and courageous acts. The sleepy back roads of these rural counties were an unexpected place for inspired activism – and this trail tells the poignant and often explosive story."
                         </p>
-                        <a href="https://vacrossroads.com/virginiacptcats/history/?id=94&custom_term=Civil%20Rights%20Trail" target="_blank" class="btn btn-primary btn-block"> Learn More</a>
+                        <a href="https://vacrossroads.com/virginiacptcats/history/?id=94&custom_term=Civil%20Rights%20Trail" target="_blank" class="btn btn-primary btn-block">Explore</a>
                       </div>
                     </div>
                   </div>
                 </div>
 
 
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col">
-            <h2 class="moton-header"><a id="rules-and-policies">Museum Rules & Policies</h2>
-            <?php the_field('policies'); ?>
             </div>
           </div>
         <?php endwhile; // end of the loop. ?>
@@ -192,9 +186,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</div><!-- .row end -->
 
-	</div><!-- #content -->
+  </div><!-- #content -->
 
 </div><!-- #full-width-page-wrapper -->
+<div class="container-fluid bg-subtle-swoosh">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+        <h2 class="moton-header mt-5"><a id="rules-and-policies">Museum Rules & Policies</a></h2>
+        <?php the_field('policies'); ?>
+        </div>
+      </div>
+    </div>
+  </div>
 <?php 
   include_once get_stylesheet_directory() . '/partials/configurable-cta.php';
 ?>

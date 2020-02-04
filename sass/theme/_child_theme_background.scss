@@ -8,6 +8,21 @@
 
 // Eggplant Background Variants
 
+.bg-box-stripes {
+  background-image: url('/wp-content/themes/moton-museum-child-theme/images/backgrounds/box_stripes.png');
+  background-size: cover;
+}
+
+.bg-subtle-swoosh {
+  background-image: url('/wp-content/themes/moton-museum-child-theme/images/backgrounds/subtle_swoosh.png');
+  background-size: cover;
+}
+
+.bg-stripes-left {
+  background-image: url('/wp-content/themes/moton-museum-child-theme/images/backgrounds/stripes_left.png');
+  background-size: cover;
+}
+
 .bg-crosshatch-moton-eggplant {
   background-image: url('/wp-content/themes/moton-museum-child-theme/images/backgrounds/moton-eggplant/crosshatch.png');
 }
