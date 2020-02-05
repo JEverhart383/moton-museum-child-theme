@@ -36,7 +36,7 @@ $staff_query = new WP_Query(array(
 				<main class="site-main" id="main" role="main">
         <div class="row">
         <?php while ( $staff_query->have_posts() ) : $staff_query->the_post(); ?>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mt-3">
           <div class="card">
             <?php $staff = assemble_staff_member_from_post($post); ?>
             <img src="<?php echo $staff['headshot']['url']; ?>" alt="" class="card-img-top" alt="">
