@@ -31,3 +31,17 @@
     }
   }
 }
+
+// Other Header Styles
+
+h1.entry-title,
+.site-main h2,
+.site-main h3 {
+  color: $moton-eggplant;
+  padding-bottom: 5px;
+  border-bottom: 3px solid $moton-orange;
+}
+
+h3, h4, h5 {
+  color: $moton-eggplant;
+}
