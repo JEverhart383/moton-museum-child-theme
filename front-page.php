@@ -15,7 +15,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div class="row">
       <div class="col-lg-12">
         <h1 class="display-4">The Eyes of the World Are On Us.</h1>
-        <p class="lead">Farmville, Virginia's former Robert Russa Moton High School, now a National Historical Landmark and museum, is the student birthplace of America's Civil Rights Revolution.
+        <p class="lead">Farmville, Virginia's former Robert Russa Moton High School, now a National Historical Landmark and museum, is the birthplace of America's student-led Civil Rights Revolution.
           <br>
           <br>
           <a href="" class="btn btn-outline-white">Learn More</a>

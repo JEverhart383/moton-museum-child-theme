@@ -68,4 +68,7 @@ function moton_filter_pre_get_posts( $query ) {
 }
 add_filter( 'pre_get_posts', 'moton_filter_pre_get_posts' );
 
+add_post_type_support( 'page', 'excerpt' );
+
+
 
