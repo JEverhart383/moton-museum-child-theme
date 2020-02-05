@@ -93,15 +93,13 @@ $events_page = get_page_by_template('events-template.php')[0];
       <div class="col-lg-6"></div>
       <div class="col-lg-6 content-tile text-center">
         <h3 class="text-moton-eggplant mt-5"><?php echo $learn_page->post_title; ?></h3>
-        <p><?php echo $learn_page->post_content; ?></p>
-        <a href="<?php echo get_the_permalink($learn_page->ID); ?>" class="btn btn-primary">Learn More</a>
+        <?php echo get_the_excerpt($learn_page->ID); ?>
       </div>
   </div>
   <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($events_page->ID); ?>); background-size: cover; background-repeat: no-repeat;">
       <div class="col-lg-6 content-tile text-center">
         <h3 class="text-moton-eggplant mt-5"><?php echo $events_page->post_title; ?></h3>
-        <p><?php echo $events_page->post_content; ?></p>
-        <a href="<?php echo get_the_permalink($events_page->ID); ?>" class="btn btn-primary">Learn More</a>
+        <?php echo get_the_excerpt($events_page->ID); ?>
       </div>
       <div class="col-lg-6"></div>
   </div>
@@ -109,8 +107,7 @@ $events_page = get_page_by_template('events-template.php')[0];
       <div class="col-lg-6"></div>
       <div class="col-lg-6 content-tile text-center">
         <h3 class="text-moton-eggplant mt-5"><?php echo $give_page->post_title; ?></h3>
-        <p><?php echo $give_page->post_content; ?></p>
-        <a href="<?php echo get_the_permalink($give_page->ID); ?>" class="btn btn-primary mb-3">Learn More</a>
+        <?php echo get_the_excerpt($give_page->ID); ?>
       </div>
   </div>
 </div>
