@@ -1,4 +1,4 @@
-<div class="container-fluid cta-container" style="background-image: linear-gradient(
+<div class="container-fluid cta-container" id="cta-container" style="background-image: linear-gradient(
   rgba(0, 0, 0, 0.65),
   rgba(0, 0, 0, 0.65)
 ), url(<?php the_field('cta_background_image', 'option'); ?>); background-size: cover; background-repeat: no-repeat;">

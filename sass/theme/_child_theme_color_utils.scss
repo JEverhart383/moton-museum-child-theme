@@ -40,6 +40,11 @@ h1.entry-title,
   color: $moton-eggplant;
   padding-bottom: 5px;
   border-bottom: 3px solid $moton-orange;
+  a {
+    &:hover {
+      color: $moton-eggplant;
+    }
+  }
 }
 
 h3, h4, h5 {

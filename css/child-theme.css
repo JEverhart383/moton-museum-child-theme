@@ -11803,6 +11803,10 @@ h1.entry-title,
   color: #48182D;
   padding-bottom: 5px;
   border-bottom: 3px solid #C46819; }
+  h1.entry-title a:hover,
+  .site-main h2 a:hover,
+  .site-main h3 a:hover {
+    color: #48182D; }
 
 h3, h4, h5 {
   color: #48182D; }
@@ -11824,10 +11828,12 @@ h1, h2, h3, h4, h5 {
 .template-hero {
   color: #fff; }
 
-.cta-container {
+#cta-container {
   background-color: #1f1f1f;
   color: #fff;
   height: 375px; }
+  #cta-container h3 {
+    color: #fff; }
 
 .homepage-hero {
   min-height: 850px;
