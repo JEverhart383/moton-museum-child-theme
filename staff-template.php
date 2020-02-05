@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Archive Staff
+ * Template Name: Staff Template
  *
  * Template for displaying a page without sidebar even if a sidebar widget is published.
  *
@@ -12,6 +12,12 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
+$staff_query = new WP_Query(array(
+  'post_type' => 'staff',
+  'posts_per_page' => -1,
+  'orderby' => 'date',
+  'order' => 'ASC'
+))
 ?>
 <div class="jumbotron jumbotron-fluid listing-hero bg-triangles-brown-bg-1" style="text-color: #fff;">
   <div class="container">
@@ -29,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<main class="site-main" id="main" role="main">
         <div class="row">
-        <?php while ( have_posts() ) : the_post(); ?>
+        <?php while ( $staff_query->have_posts() ) : $staff_query->the_post(); ?>
           <div class="col-lg-4">
           <div class="card">
             <?php $staff = assemble_staff_member_from_post($post); ?>
