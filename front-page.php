@@ -18,8 +18,8 @@ $container = get_theme_mod( 'understrap_container_type' );
         <p class="lead">Farmville, Virginia's former Robert Russa Moton High School, now a National Historical Landmark and museum, is the birthplace of America's student-led Civil Rights Revolution.
           <br>
           <br>
-          <a href="" class="btn btn-outline-white">Learn More</a>
-          <a href="" class="btn btn-outline-white">Plan Your Visit</a>
+          <a href="/learn" class="btn btn-outline-white">Learn More</a>
+          <a href="/visit" class="btn btn-outline-white">Plan Your Visit</a>
         </p>
       </div>
     </div>
