@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="container-fluid bg-subtle-swoosh" id="content">
     <div class="container">
       <div class="row">
-        <div class="offset-md-4 col-md-8 content-area" id="primary">
+        <div class="offset-md-3 col-md-6 content-area" id="primary">
           <main class="site-main" id="main" role="main">
             <div class="row">
               <div class="col">
