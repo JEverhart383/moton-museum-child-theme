@@ -31,7 +31,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
     <div class="row">
       <div class="col-lg-12 text-center text-moton-eggplant">
-          <h4>Explore More</h4>
+          <h4>Explore</h4>
           <i class="fa fa-chevron-down fa-2x"></i>
       </div>
     </div>
@@ -54,7 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <br> 
                 Farmville, VA 23901
               </address>
-              <p>(434) 315-8775 </p>
+              <p>434.315.8775</p>
             </div>
           </div>
           <div class="col-lg-6">
