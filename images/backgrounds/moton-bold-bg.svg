@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="512px" viewBox="0 0 1024 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Bold</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Bold" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-Copy" stroke="#8A7967" fill-opacity="0.65" fill="#8A7967" fill-rule="nonzero" cx="774.053392" cy="465" r="100"></circle>
+        <circle id="Oval" stroke="#80A3B7" fill="#80A3B7" fill-rule="nonzero" cx="759.047532" cy="482" r="100"></circle>
+        <rect id="Rectangle-Copy-2" stroke="#C46819" fill-opacity="0.9" fill="#C46819" fill-rule="nonzero" transform="translate(916.392278, 162.127755) rotate(-140.000000) translate(-916.392278, -162.127755) " x="895.392278" y="-440.872245" width="42" height="1206"></rect>
+        <path d="M389.502863,95.9844623 L363.645081,62.8880107 L-163.534113,474.765538 L-137.676331,507.861989 L329.523157,142.845745 L716.145776,637.70013 L776.034593,590.909858 L389.411974,96.0554724 L389.502863,95.9844623 Z" id="Combined-Shape" stroke="#48182D" fill-opacity="0.95" fill="#48182D" fill-rule="nonzero"></path>
+        <path d="M239.850686,411.615116 L228.980441,397.701836 L0.701836114,576.052629 L11.5720814,589.965908 L214.273697,431.598049 L382.015811,646.298164 L407.553366,626.346039 L239.811253,411.645924 L239.850686,411.615116 Z" id="Combined-Shape-Copy-2" stroke="#8A7967" fill-opacity="0.95" fill="#8A7967" fill-rule="nonzero"></path>
+        <path d="M239.850686,401.615116 L228.980441,387.701836 L0.701836114,566.052629 L11.5720814,579.965908 L214.273697,421.598049 L382.015811,636.298164 L407.553366,616.346039 L239.811253,401.645924 L239.850686,401.615116 Z" id="Combined-Shape-Copy" stroke="#80A3B7" fill-opacity="0.95" fill="#80A3B7" fill-rule="nonzero"></path>
+        <rect id="Rectangle" stroke="#C46819" fill-opacity="0.9" fill="#C46819" fill-rule="nonzero" transform="translate(185.916889, 256.021602) rotate(-48.000000) translate(-185.916889, -256.021602) " x="133.916889" y="-248.478398" width="104" height="1009"></rect>
+        <polygon id="Path" stroke="#8A7967" fill-opacity="0.85" fill="#8A7967" fill-rule="nonzero" points="529 79 529 265.785156 571.289062 316.666016 571.289062 166.169922 1043.70703 166.169922 1043.70703 79"></polygon>
+        <polygon id="Path-Copy-3" stroke="#8E8603" fill="#8E8603" fill-rule="nonzero" points="512 59.6992188 512 246.484375 554.289062 297.365234 554.289062 146.869141 1026.70703 146.869141 1026.70703 59.6992188"></polygon>
+        <polygon id="Path-Copy-2" stroke="#8A7967" fill-opacity="0.85" fill="#8A7967" fill-rule="nonzero" points="613 217 613 373.134493 648.387503 415.666016 648.387503 289.865702 1043.70703 289.865702 1043.70703 217"></polygon>
+        <polygon id="Path-Copy" stroke="#DEC21C" fill="#DEC21C" fill-rule="nonzero" points="596 198 596 354.134493 631.387503 396.666016 631.387503 270.865702 1026.70703 270.865702 1026.70703 198"></polygon>
+        <polygon id="Path-2" stroke="#8E8603" fill="#8E8603" fill-rule="nonzero" points="512 382.390625 512 473.474609 555.302734 512 555.302734 436.783203"></polygon>
+        <polygon id="Path-2-Copy" stroke="#8E8603" fill="#8E8603" fill-rule="nonzero" points="512 382.390625 512 473.474609 555.302734 512 555.302734 436.783203"></polygon>
+        <polygon id="Path-3" stroke="#8A7967" fill-opacity="0.85" fill="#8A7967" fill-rule="nonzero" points="555 436 555 509.707031 570.308594 522.611328 570.308594 454.880859"></polygon>
+    </g>
+</svg>

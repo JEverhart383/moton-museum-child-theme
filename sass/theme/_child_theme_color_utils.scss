@@ -1,0 +1,52 @@
+.text-moton-eggplant {
+  color: $moton-eggplant;
+}
+
+.text-moton-orange {
+  color: $moton-orange;
+}
+
+.text-moton-blue {
+  color: $moton-blue;
+}
+
+.text-moton-green {
+  color: $moton-green;
+}
+
+
+
+.border-bottom-moton-eggplant {
+  border-bottom: 2px solid $moton-eggplant;
+}
+
+.moton-header {
+  color: $moton-eggplant;
+  padding-bottom: 5px;
+  border-bottom: 3px solid $moton-orange;
+  a {
+    &:hover {
+      text-decoration: none;
+      color: $moton-eggplant;
+    }
+  }
+}
+
+// Other Header Styles
+
+h1.entry-title,
+.site-main h2,
+.site-main h3 {
+  color: $moton-eggplant;
+  padding-bottom: 5px;
+  border-bottom: 3px solid $moton-orange;
+  a {
+    &:hover {
+      color: $moton-eggplant;
+    }
+  }
+}
+
+h3, h4, h5 {
+  color: $moton-eggplant;
+}

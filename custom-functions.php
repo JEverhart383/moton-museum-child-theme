@@ -1,58 +1,82 @@
 <?php
-require_once dirname(__FILE__) . '/post-types/listing.php';
 
-function create_mls_status_taxonomy() {
-	register_taxonomy(
-			'listings_mls_status',
-			'listing',
-			array(
-					'labels' => array(
-							'name' => 'MLS Status',
-							'add_new_item' => 'Add New MLS Status',
-							'new_item_name' => "New MLS Status"
-					),
-					'show_ui' => true,
-					'show_tagcloud' => false,
-					'hierarchical' => true
-			)
-	);
-}
+require_once dirname(__FILE__) . '/post-types/staff.php';
+require_once dirname(__FILE__) . '/post-types/gallery.php';
 
-
-function get_mls_status_badge($post_id) {
-	$statuses = get_the_terms(get_the_ID(), 'listings_mls_status');
-	$html = ''; 
-	if(is_array($statuses)) {
-		$status = $statuses[0];
-		switch($status->slug) {
-			case 'active':
-				$html = '<span class="badge badge-pill badge-success">For Sale</span>';
-				break;
-			case 'under-contract':
-				$html = '<span class="badge badge-pill badge-warning">Under Contract</span>';
-				break;
-			case 'closed':
-				$html = '<span class="badge badge-pill badge-danger">Sold</span>';
-				break;
-			default:
-				$html = '<span class="badge badge-pill badge-success">For Sale</span>';
-		}
-		return $html;
-	} else {
-		return $html;
-	}
-}
-
-add_action( 'init', 'create_mls_status_taxonomy', 0 );
 
 if( function_exists('acf_add_options_page') ) {
 	
 	acf_add_options_page(array(
-		'page_title' 	=> 'Theme General Settings',
-		'menu_title'	=> 'Theme Settings',
-		'menu_slug' 	=> 'theme-general-settings',
+		'page_title' 	=> 'Moton Theme General Settings',
+		'menu_title'	=> 'Moton Settings',
+		'menu_slug' 	=> 'moton-theme-general-settings',
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
 	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Moton Theme CTA Settings',
+		'menu_title'	=> 'CTA Settings',
+		'parent_slug' 	=> 'moton-theme-general-settings'
+	));
 	
 }
+
+
+
+function assemble_staff_member_from_post($post) {
+	$post_id = get_the_ID($post);
+	$honorific = get_field('honorific', $post_id);
+	$first_name = get_field('first_name', $post_id);
+	$last_name = get_field('last_name', $post_id);
+	$full_name = $honorific === 'None' ? "{$first_name} {$last_name}" : "{$honorific} {$first_name} {$last_name}";
+	$position = get_field('position', $post_id);
+	$moton_resident_scholar = get_field('moton_resident_scholar', $post_id);
+	$email = get_field('email', $post_id);
+	$phone = get_field('phone', $post_id);
+	$headshot = get_field('headshot', $post_id);
+	$permalink = get_the_permalink($post_id); 
+	return array(
+		'full_name' => $full_name,
+		'position' => $position,
+		'email' => $email,
+		'phone' => $phone,
+		'headshot' => $headshot,
+		'moton_resident_scholar' => $moton_resident_scholar,
+		'permalink' => $permalink
+	);
+}
+
+function get_page_by_template($template = '') {
+	$args = array(
+		'meta_key' => '_wp_page_template',
+		'meta_value' => $template
+	);
+	return get_pages($args); 
+}
+
+
+function moton_filter_pre_get_posts( $query ) {
+	if ( ! $query->is_main_query() ) {
+			return $query;
+	} else {
+			if ( $query->get('post_type') === 'staff' ) {
+					$query->set('posts_per_page', -1 );
+			}
+			return $query;
+	}
+}
+add_filter( 'pre_get_posts', 'moton_filter_pre_get_posts' );
+
+add_post_type_support( 'page', 'excerpt' );
+
+function replace_excerpt_button_class($text) {
+	$text = str_replace('btn-secondary', 'btn-primary', $text);
+	$text = str_replace('Read More...', 'Read More', $text);
+	$text = str_replace('[...]', '', $text);
+	return $text;
+}
+
+add_filter('get_the_excerpt', 'replace_excerpt_button_class'); 
+
+
