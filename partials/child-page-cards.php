@@ -31,7 +31,6 @@ $child_page_index = 0;
       <div class="<?php echo $text_box_class; ?>">
         <h3 class="text-moton-eggplant mt-5"><?php the_title(); ?></h3>
         <?php echo get_the_excerpt(); ?>
-        <a href="<?php echo get_the_permalink(); ?>" class="btn btn-primary">Learn More</a>
       </div>
   </div>
 </div>
