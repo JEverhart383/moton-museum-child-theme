@@ -11849,6 +11849,33 @@ h3, h4, h5 {
     #page-wrapper .widget-area h3.widget-title {
       margin: .5rem 0;
       color: #fff; }
+    #index-wrapper .widget-area aside.widget_search .input-group .btn.btn-pimary, #index-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-pimary[type=submit], .wpcf7 #index-wrapper .widget-area aside.widget_search .input-group input.btn-pimary[type=submit],
+    #single-wrapper .widget-area aside.widget_search .input-group .btn.btn-pimary,
+    #single-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-pimary[type=submit],
+    .wpcf7 #single-wrapper .widget-area aside.widget_search .input-group input.btn-pimary[type=submit],
+    #page-wrapper .widget-area aside.widget_search .input-group .btn.btn-pimary,
+    #page-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-pimary[type=submit],
+    .wpcf7 #page-wrapper .widget-area aside.widget_search .input-group input.btn-pimary[type=submit] {
+      color: #fff;
+      background-color: #c46819;
+      border-color: #c46819; }
+      #index-wrapper .widget-area aside.widget_search .input-group .btn.btn-pimary:hover, #index-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-pimary:hover[type=submit], .wpcf7 #index-wrapper .widget-area aside.widget_search .input-group input.btn-pimary:hover[type=submit],
+      #single-wrapper .widget-area aside.widget_search .input-group .btn.btn-pimary:hover,
+      #single-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-pimary:hover[type=submit],
+      .wpcf7 #single-wrapper .widget-area aside.widget_search .input-group input.btn-pimary:hover[type=submit],
+      #page-wrapper .widget-area aside.widget_search .input-group .btn.btn-pimary:hover,
+      #page-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-pimary:hover[type=submit],
+      .wpcf7 #page-wrapper .widget-area aside.widget_search .input-group input.btn-pimary:hover[type=submit] {
+        color: #fff;
+        background-color: #a25615;
+        border-color: #975013; }
+    #index-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title,
+    #index-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title a aside.tribe-events-list-widget p.tribe-events-widget-link a,
+    #single-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title,
+    #single-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title a aside.tribe-events-list-widget p.tribe-events-widget-link a,
+    #page-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title,
+    #page-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title a aside.tribe-events-list-widget p.tribe-events-widget-link a {
+      color: #fff; }
 
 @font-face {
   font-family: Tungsten;

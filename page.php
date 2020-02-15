@@ -53,5 +53,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div><!-- #content -->
 
 </div><!-- #page-wrapper -->
+<?php 
+  include_once get_stylesheet_directory() . '/partials/configurable-cta.php';
+?>
 
 <?php get_footer(); ?>

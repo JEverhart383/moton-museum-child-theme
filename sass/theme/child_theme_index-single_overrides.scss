@@ -21,5 +21,24 @@
       margin: .5rem 0;
       color: #fff;
     }
+    // Override search widget
+    aside.widget_search .input-group .btn.btn-pimary {
+      color: #fff;
+      background-color: #c46819;
+      border-color: #c46819;
+      &:hover {
+        color: #fff;
+        background-color: #a25615;
+        border-color: #975013;
+      }
+    }
+    aside.tribe-events-list-widget h4.tribe-event-title,
+    aside.tribe-events-list-widget h4.tribe-event-title a 
+    aside.tribe-events-list-widget p.tribe-events-widget-link a {
+      color: #fff;
+    }
+
+    // Override Recent Events Widget
+
   }
 }
