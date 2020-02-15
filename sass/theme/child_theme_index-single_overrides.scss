@@ -23,6 +23,8 @@
     }
     // Override search widget
     aside.widget_search .input-group .btn.btn-primary {
+      border-top-right-radius: .75rem;
+      border-bottom-right-radius: .75rem;
       color: #fff;
       background-color: #c46819;
       border-color: #c46819;
