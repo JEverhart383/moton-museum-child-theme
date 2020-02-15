@@ -59,8 +59,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                   <h5><i class="mt-3 fa fa-map-marker text-moton-orange"></i> Physical Location</h5>
                   <address>900 Griffin Blvd,<br>
                   Farmville, Virginia 23901</address>
-                  <a class="btn btn-primary btn-block mt-5" href="https://www.google.com/maps/dir//Robert+Russa+Moton+Museum,+900+Griffin+Blvd,+Farmville,+VA+23901/@37.2914659,-78.3977747,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89b24ec53d7fe503:0xac305f04720cc7e5!2m2!1d-78.3976322!2d37.291384">Get Directions</a>
-                  <p class="mt-5 text-small">Looking for places to stay, restaurants to try and fun activities to make your trip to Farmville memorable? Check out <a href="visitfarmville.com">visitfarmville.com.</a></p>
+                  <a class="btn btn-primary btn-block mt-3" href="https://www.google.com/maps/dir//Robert+Russa+Moton+Museum,+900+Griffin+Blvd,+Farmville,+VA+23901/@37.2914659,-78.3977747,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89b24ec53d7fe503:0xac305f04720cc7e5!2m2!1d-78.3976322!2d37.291384">Get Directions</a>
+                  <h5><i class="mt-3 fa fa-car text-moton-orange"></i> Parking</h5>
+                  <p>There are limited parking spaces onsite at The Moton Museum. Overflow parking can be found across the street from our museum at the Southgate Shopping Center. Visitors are encouraged to use the spaces that run parallel to Griffin Boulevard. Please reference our <a href="https://drive.google.com/open?id=1Wxz4HT0RSRDw6LLzBeEa4XdJP9rp4G6S&usp=sharing" target="_blank">parking map</a> for details.</p>
+                  <p class="mt-3 text-small">Looking for places to stay, restaurants to try and fun activities to make your trip to Farmville memorable? Check out <a href="visitfarmville.com">visitfarmville.com.</a></p>
                 </div>
                 <div class="col-lg-6">
                 <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=robert%20russa%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://periodic-table-of-elements.net"></a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:100%;}</style></div>
