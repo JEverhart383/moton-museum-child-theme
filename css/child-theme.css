@@ -11849,23 +11849,23 @@ h3, h4, h5 {
     #page-wrapper .widget-area h3.widget-title {
       margin: .5rem 0;
       color: #fff; }
-    #index-wrapper .widget-area aside.widget_search .input-group .btn.btn-pimary, #index-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-pimary[type=submit], .wpcf7 #index-wrapper .widget-area aside.widget_search .input-group input.btn-pimary[type=submit],
-    #single-wrapper .widget-area aside.widget_search .input-group .btn.btn-pimary,
-    #single-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-pimary[type=submit],
-    .wpcf7 #single-wrapper .widget-area aside.widget_search .input-group input.btn-pimary[type=submit],
-    #page-wrapper .widget-area aside.widget_search .input-group .btn.btn-pimary,
-    #page-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-pimary[type=submit],
-    .wpcf7 #page-wrapper .widget-area aside.widget_search .input-group input.btn-pimary[type=submit] {
+    #index-wrapper .widget-area aside.widget_search .input-group .btn.btn-primary, #index-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-primary[type=submit], .wpcf7 #index-wrapper .widget-area aside.widget_search .input-group input.btn-primary[type=submit],
+    #single-wrapper .widget-area aside.widget_search .input-group .btn.btn-primary,
+    #single-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-primary[type=submit],
+    .wpcf7 #single-wrapper .widget-area aside.widget_search .input-group input.btn-primary[type=submit],
+    #page-wrapper .widget-area aside.widget_search .input-group .btn.btn-primary,
+    #page-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-primary[type=submit],
+    .wpcf7 #page-wrapper .widget-area aside.widget_search .input-group input.btn-primary[type=submit] {
       color: #fff;
       background-color: #c46819;
       border-color: #c46819; }
-      #index-wrapper .widget-area aside.widget_search .input-group .btn.btn-pimary:hover, #index-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-pimary:hover[type=submit], .wpcf7 #index-wrapper .widget-area aside.widget_search .input-group input.btn-pimary:hover[type=submit],
-      #single-wrapper .widget-area aside.widget_search .input-group .btn.btn-pimary:hover,
-      #single-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-pimary:hover[type=submit],
-      .wpcf7 #single-wrapper .widget-area aside.widget_search .input-group input.btn-pimary:hover[type=submit],
-      #page-wrapper .widget-area aside.widget_search .input-group .btn.btn-pimary:hover,
-      #page-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-pimary:hover[type=submit],
-      .wpcf7 #page-wrapper .widget-area aside.widget_search .input-group input.btn-pimary:hover[type=submit] {
+      #index-wrapper .widget-area aside.widget_search .input-group .btn.btn-primary:hover, #index-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-primary:hover[type=submit], .wpcf7 #index-wrapper .widget-area aside.widget_search .input-group input.btn-primary:hover[type=submit],
+      #single-wrapper .widget-area aside.widget_search .input-group .btn.btn-primary:hover,
+      #single-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-primary:hover[type=submit],
+      .wpcf7 #single-wrapper .widget-area aside.widget_search .input-group input.btn-primary:hover[type=submit],
+      #page-wrapper .widget-area aside.widget_search .input-group .btn.btn-primary:hover,
+      #page-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-primary:hover[type=submit],
+      .wpcf7 #page-wrapper .widget-area aside.widget_search .input-group input.btn-primary:hover[type=submit] {
         color: #fff;
         background-color: #a25615;
         border-color: #975013; }
