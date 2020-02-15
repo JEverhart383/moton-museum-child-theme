@@ -11822,6 +11822,22 @@ h1.entry-title,
 h3, h4, h5 {
   color: #48182D; }
 
+#index-wrapper {
+  padding: 0 0 30px 0; }
+  #index-wrapper .content-area {
+    background-color: #ededed; }
+  #index-wrapper article {
+    background-color: white;
+    padding: 1.25rem;
+    margin: .5rem 0;
+    border-radius: 5px;
+    border: 1px solid #d4d4d4; }
+  #index-wrapper .widget-area {
+    background-color: #48182D;
+    color: white; }
+    #index-wrapper .widget-area h3.widget-title {
+      color: #fff; }
+
 @font-face {
   font-family: Tungsten;
   src: url(../fonts/tungsten-medium-2.otf);
@@ -11861,8 +11877,6 @@ h4, h5 {
 
 #wrapper-footer {
   padding-bottom: 0px; }
-  #wrapper-footer .site-info p:nth-child(2) {
-    margin-bottom: 0px; }
   #wrapper-footer .footer-social {
     font-size: 1.25rem; }
 

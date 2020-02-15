@@ -1,7 +1,8 @@
-@import './child_theme_background'; 
-@import './child_theme_navigation'; 
+@import './child_theme_background';
+@import './child_theme_navigation';
 @import './child_theme_buttons';
 @import './child_theme_color_utils';
+@import './child_theme_index-single_overrides.scss';
 
 @font-face {
   font-family: Tungsten;
@@ -53,9 +54,6 @@ h4, h5 {
 }
 
 #wrapper-footer {
-  .site-info p:nth-child(2) {
-    margin-bottom: 0px;
-  }
   padding-bottom: 0px;
   .footer-social {
     font-size: 1.25rem;
