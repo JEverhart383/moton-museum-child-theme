@@ -19,7 +19,7 @@ $staff_query = new WP_Query(array(
   'order' => 'ASC'
 ))
 ?>
-<div class="jumbotron jumbotron-fluid listing-hero bg-triangles-brown-bg-1" style="text-color: #fff;">
+<div class="jumbotron jumbotron-fluid listing-hero bg-triangles-purple-bg-1" style="text-color: #fff;">
   <div class="container">
     <h1 class="display-4" >Staff</h1>
   </div>
