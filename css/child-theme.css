@@ -11804,6 +11804,10 @@ figure.woocommerce-product-gallery__wrapper {
     text-decoration: none;
     color: #48182D; }
 
+#index-wrapper .site-main header.entry-header h2.entry-title a {
+  color: #48182D;
+  text-decoration: none; }
+
 h1.entry-title,
 .site-main h2,
 .site-main h3 {
