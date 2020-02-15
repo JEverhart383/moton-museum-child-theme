@@ -11837,10 +11837,12 @@ h3, h4, h5 {
     border: 1px solid #d4d4d4; }
   #index-wrapper .widget-area,
   #single-wrapper .widget-area {
+    padding-top: 1rem;
     background-color: #48182D;
     color: white; }
     #index-wrapper .widget-area h3.widget-title,
     #single-wrapper .widget-area h3.widget-title {
+      margin: .5rem 0;
       color: #fff; }
 
 @font-face {
