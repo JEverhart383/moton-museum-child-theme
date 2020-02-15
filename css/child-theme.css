@@ -11847,8 +11847,7 @@ h3, h4, h5 {
 
 @font-face {
   font-family: Tungsten;
-  src: url(../fonts/tungsten-medium-2.otf);
-  font-display: swap; }
+  src: url(../fonts/tungsten-medium-2.otf); }
 
 * {
   font-family: 'Roboto', sans-serif; }
