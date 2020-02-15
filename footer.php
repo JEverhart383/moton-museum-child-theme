@@ -25,10 +25,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="site-footer" id="colophon">
 
-					<div class="site-info">
-            <p>here is a test</p>
-						<?php understrap_site_info(); ?>
-
+					<div class="site-info text-center">
+						<p class="text-center">
+							<img src="/wp-content/themes/moton-museum-child-theme/images/RRMM_Logo_Eggplant.png">
+						</p>
+						<p class="text-moton-eggplant">900 Griffin Blvd. Farmville, VA 23901 | 434.315.8775 | info@motonmuseum.org &nbsp; &nbsp;
+							<i class="fa fa-twitter   footer-social text-moton-eggplant"></i>&nbsp;
+							<i class="fa fa-facebook  footer-social text-moton-eggplant"></i>&nbsp;
+							<i class="fa fa-instagram footer-social text-moton-eggplant"></i>&nbsp;
+							<i class="fa fa-google    footer-social text-moton-eggplant"></i>&nbsp;
+						</p>
 					</div><!-- .site-info -->
 
 				</footer><!-- #colophon -->
