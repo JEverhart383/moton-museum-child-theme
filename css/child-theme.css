@@ -11823,25 +11823,30 @@ h3, h4, h5 {
   color: #48182D; }
 
 #index-wrapper,
-#single-wrapper {
+#single-wrapper,
+#page-wrapper {
   padding: 0 0 30px 0; }
   #index-wrapper .content-area,
-  #single-wrapper .content-area {
+  #single-wrapper .content-area,
+  #page-wrapper .content-area {
     background-color: #ededed; }
   #index-wrapper article,
-  #single-wrapper article {
+  #single-wrapper article,
+  #page-wrapper article {
     background-color: white;
     padding: 1.25rem;
     margin: .5rem 0;
     border-radius: 5px;
     border: 1px solid #d4d4d4; }
   #index-wrapper .widget-area,
-  #single-wrapper .widget-area {
+  #single-wrapper .widget-area,
+  #page-wrapper .widget-area {
     padding-top: 1rem;
     background-color: #48182D;
     color: white; }
     #index-wrapper .widget-area h3.widget-title,
-    #single-wrapper .widget-area h3.widget-title {
+    #single-wrapper .widget-area h3.widget-title,
+    #page-wrapper .widget-area h3.widget-title {
       margin: .5rem 0;
       color: #fff; }
 
