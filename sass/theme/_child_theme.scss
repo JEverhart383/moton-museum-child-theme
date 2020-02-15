@@ -32,6 +32,11 @@ h4, h5 {
   margin-bottom: .75rem;
 }
 
+.site-main .alert.alert-primary h2 {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
 #wrapper-navbar nav.navbar {
   border-bottom: 2px solid $moton-green;
 }
