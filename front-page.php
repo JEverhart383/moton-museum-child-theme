@@ -10,7 +10,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="jumbotron jumbotron-fluid homepage-hero" style="background-image: linear-gradient(
       rgba(0, 0, 0, 0.75),
       rgba(0, 0, 0, 0.75)
-    ), url(http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Free-School-opening-day-1963.jpg); background-size: cover; background-repeat: no-repeat;">
+    ), url(<?php echo get_stylesheet_directory_uri() . '/images/Free-School-opening-day-1963.jpg' ?>); background-size: cover; background-repeat: no-repeat;">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -38,12 +38,10 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div class="row mt-5">
       <div class="col-lg-12">
         <h2 class="moton-header mb-5">Visiting The Museum</h2>
-        <?php if (get_field('display_hours_alert', 'option') == True): ?>
-          <div class="alert alert-primary" role="alert">
-            <h3 class="mt-3"><?php the_field('hours_alert_heading', 'option'); ?></h3>
-            <p><?php the_field('hours_alert_text', 'option'); ?></p>
-          </div>
-        <?php endif; ?>
+        <!-- Load Hours Alert Partial if set -->
+        <?php 
+          include_once get_stylesheet_directory() . '/partials/hours-alert.php';
+        ?>
         <div class="row mt-3">
           <div class="col-lg-6">
             <h5><i class="fa fa-clock-o text-moton-orange"></i> Noon-4:00 p.m., Monday-Saturday</h5>
@@ -80,6 +78,22 @@ $container = get_theme_mod( 'understrap_container_type' );
         <a href="" class="btn btn-primary">Mission</a>
         <a href="" class="btn btn-primary">Board</a>
         <a href="" class="btn btn-primary">Council</a>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-lg-12">
+        <h2 class="moton-header mb-3">Rent The Museum</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <p>Host your event at Virginia’s civil rights National Historic Landmark.</p>
+            <p>The Moton Museum offers a fully restored historic space that is available to rent for private, public and non-profit functions.</p>
+            <p>Our multi-purpose auditorium can accommodate up to 200 guests theatre style, and 100 guests banquet style, with a variety of A/V set-up options.</p>
+            <a href="/events/rental" class="btn btn-primary">Learn About Renting</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="<?php echo get_stylesheet_directory_uri() . '/images/Moton-Auditorium.png'; ?>" alt="" class="fluid">
+          </div>
+        </div>
       </div>
     </div>
 </div><!-- #full-width-page-wrapper -->
