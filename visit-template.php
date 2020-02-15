@@ -38,6 +38,9 @@ $container = get_theme_mod( 'understrap_container_type' );
           </div>
           <div class="row mt-5">
             <div class="col">
+              <?php 
+                include_once get_stylesheet_directory() . '/partials/hours-alert.php';
+              ?>
               <h2 class="moton-header"> <a id="hours-and-admissions">Hours and Admissions</a></h2>
               <h5><i class="mt-3 fa fa-clock-o text-moton-orange"></i> Guest Hours</h5>
               <p><?php the_field('guest_hours'); ?></p>
