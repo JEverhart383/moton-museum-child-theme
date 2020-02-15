@@ -26,6 +26,12 @@ h4, h5 {
   font-weight: bold;
 }
 
+.site-main h2,
+.site-main h3 {
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+}
+
 #wrapper-navbar nav.navbar {
   border-bottom: 2px solid $moton-green;
 }
