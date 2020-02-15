@@ -5,7 +5,7 @@
 <div class="container">
 <div class="row">
   <div class="col-sm-12">
-  <h3 class="mt-5"><?php the_field('cta_headline', 'option'); ?></h3>
+  <h2 class="mt-5"><?php the_field('cta_headline', 'option'); ?></h2>
   <p><?php the_field('cta_text', 'option'); ?></p>
   <p>
     <a href="<?php the_field('cta_primary_button_link', 'option'); ?>" class="btn btn-warning">

@@ -5,6 +5,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -11811,8 +11812,21 @@ h1.entry-title,
 h3, h4, h5 {
   color: #48182D; }
 
+@font-face {
+  font-family: Tungsten;
+  src: url(../fonts/tungsten-medium-2.otf); }
+
+* {
+  font-family: 'Roboto', sans-serif; }
+
 h1, h2, h3, h4, h5 {
   text-transform: uppercase; }
+
+h1, h2, h3 {
+  font-family: Tungsten; }
+
+h4, h5 {
+  font-weight: bold; }
 
 #wrapper-navbar nav.navbar {
   border-bottom: 2px solid #8E8603; }

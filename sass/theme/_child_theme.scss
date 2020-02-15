@@ -3,9 +3,27 @@
 @import './child_theme_buttons';
 @import './child_theme_color_utils';
 
+@font-face {
+  font-family: Tungsten;
+  src: url(../fonts/tungsten-medium-2.otf);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
 
 h1, h2, h3, h4, h5 {
   text-transform: uppercase;
+}
+
+h1, h2, h3 {
+  font-family: Tungsten; 
+}
+
+h4, h5 {
+  font-weight: bold;
 }
 
 #wrapper-navbar nav.navbar {

@@ -111,11 +111,11 @@ $events_page = get_page_by_template('events-template.php')[0];
       </div>
   </div>
 </div>
+<div class="container-fluid text-center">
+  <img src="<?php echo get_stylesheet_directory_uri() . '/images/motonmuseum_affiliate_banner.jpg'; ?>" alt="" class="fluid mt-3 mb-3">
+</div>
 <?php 
   include_once get_stylesheet_directory() . '/partials/configurable-cta.php';
 ?>
 <?php endwhile; // end of the loop. ?>
-<div class="container-fluid text-center">
-  <img src="<?php echo get_stylesheet_directory_uri() . '/images/motonmuseum_affiliate_banner.jpg'; ?>" alt="" class="fluid mt-3 mb-3">
-</div>
 <?php get_footer(); ?>
