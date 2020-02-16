@@ -11844,10 +11844,10 @@ h3, h4, h5 {
     padding-top: 1rem;
     background-color: #48182D;
     color: white; }
-    #index-wrapper .widget-area aside.widget:nth-child(n+1),
-    #single-wrapper .widget-area aside.widget:nth-child(n+1),
-    #page-wrapper .widget-area aside.widget:nth-child(n+1) {
-      margin-top: .5rem; }
+    #index-wrapper .widget-area aside.widget:nth-child(n+2),
+    #single-wrapper .widget-area aside.widget:nth-child(n+2),
+    #page-wrapper .widget-area aside.widget:nth-child(n+2) {
+      margin-top: 2.5rem; }
     #index-wrapper .widget-area h3.widget-title,
     #single-wrapper .widget-area h3.widget-title,
     #page-wrapper .widget-area h3.widget-title {
@@ -11973,9 +11973,6 @@ h4, h5 {
 
 #gallery-carousel .carousel-item .carousel-caption h5 {
   color: #fff; }
-
-.widget-area aside.widget:nth-child(n+2) {
-  margin-top: 2rem; }
 
 /*
 * Use existing Bootstrap 4 classes and
