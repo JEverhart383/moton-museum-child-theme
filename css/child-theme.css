@@ -11974,6 +11974,9 @@ h4, h5 {
 #gallery-carousel .carousel-item .carousel-caption h5 {
   color: #fff; }
 
+.understrap-read-more-link {
+  margin-top: 1.5rem; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
