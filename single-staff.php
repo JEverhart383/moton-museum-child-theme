@@ -35,7 +35,6 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
             <div class="col-lg-8 mt-3">
               <h2><?php echo $staff['full_name']?></h2>
-              <hr>
               <h4 class="mb-2 text-muted"><?php echo $staff['position']?></h4>
               <?php if($staff['moton_resident_scholar'] === TRUE):?>
               <span class="badge badge-pill badge-primary">Moton Resident Scholar</span>
@@ -51,7 +50,6 @@ $container = get_theme_mod( 'understrap_container_type' );
           <div class="row mt-5">
             <div class="col-lg-12">
               <h3>Biography</h3>
-              <hr>
               <?php the_content(); ?>
             </div>
           </div>
