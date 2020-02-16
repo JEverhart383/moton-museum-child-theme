@@ -11950,7 +11950,7 @@ h4, h5 {
 #cta-container {
   background-color: #1f1f1f;
   color: #fff;
-  height: 375px; }
+  min-height: 375px; }
   #cta-container h3 {
     color: #fff; }
 
