@@ -24,6 +24,7 @@ $post_id_to_query = 8161;
   </div>
 </div>
 <div class="container">
+   <?php if(is_archive()): ?>
     <div class="row mt-5">
       <div class="alert alert-primary">
         <h2 class="moton-header mb-3">Rent The Museum</h2>
@@ -40,17 +41,18 @@ $post_id_to_query = 8161;
         </div>
       </div>
     </div>
+<?php endif ;?>
+    <?php
+      echo tribe( Template_Bootstrap::class )->get_view_html();
+    ?>
 </div>
 
-<?php
-echo tribe( Template_Bootstrap::class )->get_view_html();
+<?php 
+  include_once get_stylesheet_directory() . '/partials/child-page-cards.php';
 ?>
-  <?php 
-    include_once get_stylesheet_directory() . '/partials/child-page-cards.php';
-  ?>
-  <?php 
-    include_once get_stylesheet_directory() . '/partials/configurable-cta.php';
-  ?>
+<?php 
+  include_once get_stylesheet_directory() . '/partials/configurable-cta.php';
+?>
 <?php
 get_footer();
 ?>
