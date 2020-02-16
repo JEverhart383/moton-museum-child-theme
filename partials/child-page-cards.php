@@ -9,19 +9,17 @@ $child_page_query = new WP_Query(array(
 ));
 ?>
 <?php if ($child_page_query->have_posts()):?>
-<div class="container mb-5">
+<div class="container mb-5 child-card-container">
   <div class="row">
   <?php while($child_page_query->have_posts()): $child_page_query->the_post(); ?>
     <div class="col-lg-4 col-md-6">
-      <a href="<?php echo get_the_permalink(); ?>">
-        <div class="card">
+        <div class="card mt-3">
           <img src="<?php echo get_the_post_thumbnail_url(get_the_ID());?>" alt="" class="card-img-top mh-225">
           <div class="card-body">
             <h5 class="card-title"><?php echo get_the_title();?></h5>
             <p class="card-text"><?php echo get_the_excerpt();?></p>
           </div>
         </div>
-      </a>
     </div>
   <?php endwhile; ?>
   </div>
