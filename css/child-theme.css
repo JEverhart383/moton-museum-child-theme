@@ -11856,6 +11856,8 @@ h3, h4, h5 {
     #page-wrapper .widget-area aside.widget_search .input-group .btn.btn-primary,
     #page-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-primary[type=submit],
     .wpcf7 #page-wrapper .widget-area aside.widget_search .input-group input.btn-primary[type=submit] {
+      border-top-right-radius: .75rem;
+      border-bottom-right-radius: .75rem;
       color: #fff;
       background-color: #c46819;
       border-color: #c46819; }
