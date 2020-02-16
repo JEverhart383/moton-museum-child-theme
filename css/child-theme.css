@@ -11872,11 +11872,14 @@ h3, h4, h5 {
         background-color: #a25615;
         border-color: #975013; }
     #index-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title,
-    #index-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title a aside.tribe-events-list-widget p.tribe-events-widget-link a,
+    #index-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title a,
+    #index-wrapper .widget-area aside.tribe-events-list-widget p.tribe-events-widget-link a,
     #single-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title,
-    #single-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title a aside.tribe-events-list-widget p.tribe-events-widget-link a,
+    #single-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title a,
+    #single-wrapper .widget-area aside.tribe-events-list-widget p.tribe-events-widget-link a,
     #page-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title,
-    #page-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title a aside.tribe-events-list-widget p.tribe-events-widget-link a {
+    #page-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title a,
+    #page-wrapper .widget-area aside.tribe-events-list-widget p.tribe-events-widget-link a {
       color: #fff !important; }
 
 @font-face {
