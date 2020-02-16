@@ -19,11 +19,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 $post_id_to_query = 8161;
 ?>
 <div class="jumbotron jumbotron-fluid template-hero bg-triangles-purple-bg-1">
-<div class="container">
+  <div class="container">
     <h1 class="display-4">Events</h1>
   </div>
 </div>
-<div class="container">
+<div class="container" id="events-wrapper">
    <?php if(is_archive()): ?>
     <div class="row mt-5">
       <div class="alert alert-primary">
@@ -41,7 +41,7 @@ $post_id_to_query = 8161;
         </div>
       </div>
     </div>
-<?php endif ;?>
+    <?php endif ;?>
     <?php
       echo tribe( Template_Bootstrap::class )->get_view_html();
     ?>
