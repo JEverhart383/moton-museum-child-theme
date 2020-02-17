@@ -1,6 +1,6 @@
 // Add your custom JS here.
 
-window.addEventListener('DOMContentLoaded', setHeightToTallestCard);
+window.addEventListener('load', setHeightToTallestCard);
 window.addEventListener('resize', setHeightToTallestCard); 
 
 
