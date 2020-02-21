@@ -43,6 +43,16 @@ $container = get_theme_mod( 'understrap_container_type' );
       include_once get_stylesheet_directory() . '/partials/child-page-cards.php';
     ?>
   <?php endwhile; // end of the loop. ?>
+  <div class="container-fluid text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>The Moton Museum is proudly affiliated with the Virginia Association of Museums, the American Association for State and Local History, The American Alliance of Museums, and the Association of African American Museums.</p>
+        </div>
+      </div>
+    </div>
+    <img src="<?php echo get_stylesheet_directory_uri() . '/images/motonmuseum_affiliate_banner.jpg'; ?>" alt="" class="fluid mt-3 mb-3">
+  </div>
   <?php 
     include_once get_stylesheet_directory() . '/partials/configurable-cta.php';
   ?>
