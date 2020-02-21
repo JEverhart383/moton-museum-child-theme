@@ -79,6 +79,25 @@
             "delay": 0
         },
         {
+            "key": "field_5e4f502095f9b",
+            "label": "Policy Intro",
+            "name": "policy_intro",
+            "type": "wysiwyg",
+            "instructions": "This is the text that will be displayed before the policy accordion",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_5e2b261a9fc69",
             "label": "Policies",
             "name": "policies",
@@ -115,5 +134,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1579964298
+    "modified": 1582256276
 }

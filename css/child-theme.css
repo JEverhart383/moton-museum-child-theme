@@ -11992,6 +11992,16 @@ h4, h5 {
 .understrap-read-more-link {
   margin-top: 1rem; }
 
+.accordion > .card .card-header {
+  background-color: #48182D; }
+  .accordion > .card .card-header button {
+    color: #fff;
+    text-decoration: underline; }
+    .accordion > .card .card-header button i.fa-minus {
+      display: none; }
+  .accordion > .card .card-header button[aria-expanded="true"] i.fa-plus {
+    display: none; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

@@ -108,3 +108,19 @@ h4, h5 {
 .understrap-read-more-link {
   margin-top: 1rem;
 }
+
+// Accordian
+
+.accordion>.card .card-header {
+  background-color: $moton-eggplant;
+  button {
+    color: #fff;
+    text-decoration: underline;
+    i.fa-minus {
+      display: none;
+    }
+  }
+  button[aria-expanded="true"] i.fa-plus {
+    display: none;
+  }
+}

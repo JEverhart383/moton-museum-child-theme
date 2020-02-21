@@ -194,12 +194,27 @@ $container = get_theme_mod( 'understrap_container_type' );
   </div><!-- #content -->
 
 </div><!-- #full-width-page-wrapper -->
-<div class="container-fluid bg-subtle-swoosh">
+<div class="container-fluid bg-subtle-swoosh mb-5">
     <div class="container">
       <div class="row">
         <div class="col">
         <h2 class="moton-header mt-5"><a id="rules-and-policies">Museum Rules & Policies</a></h2>
-        <?php the_field('policies'); ?>
+        <?php the_field('policy_intro'); ?>
+        <div class="accordion" id="policyAccordian">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#policyCollapse" aria-expanded="true" aria-controls="collapseOne">
+                  Click to Read Policies
+                </button>
+            </div>
+            <div id="policyCollapse" class="collapse" aria-labelledby="headingOne" data-parent="#policyAccordian">
+              <div class="card-body">
+                  <?php the_field('policies'); ?>
+              </div>
+            </div>
+          </div>
+
+        </div>
         </div>
       </div>
     </div>
