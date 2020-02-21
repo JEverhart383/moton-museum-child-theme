@@ -32,12 +32,19 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <?php the_content(); ?>
               </div>
               <div class="col-lg-6">
-                <div class="card text-white bg-primary mb-5">
+                <div class="card text-white bg-primary mb-5 text-center">
                   <div class="card-body">
-                    <h5 class="card-title text-white">Give now</h5>
-                    <p class="card-text">You should click this link to give 
+                    <h5 class="card-title text-white"><?php the_field('give_cta_heading')?></h5>
+                    <p class="w-33">
+                      <img src="<?php echo get_stylesheet_directory_uri() . '/images/donation-box.svg'; ?>" alt="">
+                    </p>
+                    <p class="card-text">
+                      <?php the_field('give_cta_content')?>
+                      You can give to Moton easily using your debit or credit card to help support our efforts.
                       <br>
-                      <a href="/give/give-now" class="btn btn-warning">Give Now</a>
+                      <a href="<?php the_field('give_cta_button_url')?>" class="btn btn-warning mt-3">
+                        <?php the_field('give_cta_button_text')?>
+                      </a>
                     </p>
                   </div>
                 </div>
