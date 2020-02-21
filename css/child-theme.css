@@ -11959,6 +11959,8 @@ h4, h5 {
   background-color: #6c757d;
   color: #fff;
   border-bottom: 7px solid #C46819; }
+  .homepage-hero h5 {
+    color: white; }
 
 .alternating-tile-section .row .content-tile {
   min-height: 350px;
