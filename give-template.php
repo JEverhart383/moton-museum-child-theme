@@ -40,7 +40,6 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </p>
                     <p class="card-text">
                       <?php the_field('give_cta_content')?>
-                      You can give to Moton easily using your debit or credit card to help support our efforts.
                       <br>
                       <a href="<?php the_field('give_cta_button_url')?>" class="btn btn-warning mt-3">
                         <?php the_field('give_cta_button_text')?>
