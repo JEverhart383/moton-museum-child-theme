@@ -34,7 +34,7 @@ $staff_query = new WP_Query(array(
 			<div class="col-md-12 content-area" id="primary">
 
 				<main class="site-main" id="main" role="main">
-        <div class="row">
+        <div class="row child-card-container">
         <?php while ( $staff_query->have_posts() ) : $staff_query->the_post(); ?>
           <div class="col-lg-4 mt-3">
           <div class="card">
