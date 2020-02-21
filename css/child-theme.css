@@ -11902,6 +11902,19 @@ h3, h4, h5 {
         background-color: #a25615;
         border-color: #975013; }
 
+.tribe-events-c-search__button {
+  color: #fff !important;
+  background-color: #48182d !important;
+  border-color: #48182d !important;
+  border-radius: 0px !important;
+  font-family: 'Roboto', sans-serif !important; }
+
+.tribe-events-calendar-month__day-date-link {
+  color: #48182D !important; }
+
+.tribe-common .tribe-common-anchor-alt {
+  border-bottom: 2px solid #48182D !important; }
+
 @font-face {
   font-family: Tungsten;
   src: url(../fonts/tungsten-medium-2.otf); }
