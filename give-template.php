@@ -28,8 +28,19 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="col-md-12 content-area" id="primary">
           <main class="site-main" id="main" role="main">
             <div class="row">
-              <div class="col">
+              <div class="col-lg-6">
                 <?php the_content(); ?>
+              </div>
+              <div class="col-lg-6">
+                <div class="card text-white bg-primary mb-5">
+                  <div class="card-body">
+                    <h5 class="card-title text-white">Give now</h5>
+                    <p class="card-text">You should click this link to give 
+                      <br>
+                      <a href="/give/give-now" class="btn btn-warning">Give Now</a>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
