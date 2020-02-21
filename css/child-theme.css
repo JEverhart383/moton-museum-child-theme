@@ -11922,7 +11922,8 @@ h3, h4, h5 {
 
 .gform_button {
   background-color: #48182D !important;
-  color: #fff !important; }
+  color: #fff !important;
+  padding: .5rem .75rem !important; }
 
 @font-face {
   font-family: Tungsten;
