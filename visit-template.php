@@ -195,8 +195,8 @@ $container = get_theme_mod( 'understrap_container_type' );
   </div><!-- #content -->
 
 </div><!-- #full-width-page-wrapper -->
-<div class="container-fluid bg-subtle-swoosh mb-5">
-    <div class="container">
+<div class="container-fluid bg-subtle-swoosh ">
+    <div class="container pb-5">
       <div class="row">
         <div class="col">
         <h2 class="moton-header mt-5"><a id="rules-and-policies">Museum Rules & Policies</a></h2>
