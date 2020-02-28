@@ -1,7 +1,7 @@
 <div class="container-fluid cta-container" id="cta-container" style="background-image: linear-gradient(
   rgba(0, 0, 0, 0.65),
   rgba(0, 0, 0, 0.65)
-), url(<?php the_field('cta_background_image', 'option'); ?>); background-size: cover; background-repeat: no-repeat;">
+), url(<?php the_field('cta_background_image', 'option'); ?>); background-size: cover; background-repeat: no-repeat; background-position: center;">
 <div class="container">
 <div class="row">
   <div class="col-sm-12">

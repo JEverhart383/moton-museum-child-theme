@@ -11755,11 +11755,8 @@ figure.woocommerce-product-gallery__wrapper {
     max-width: 300px;
     font-size: 2em; }
 
-.navbar-brand.custom-logo-link {
-  padding-top: 0px;
-  padding-bottom: 0px; }
-  .navbar-brand.custom-logo-link img {
-    width: 145px; }
+.navbar-brand.custom-logo-link img {
+  width: 250px; }
 
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-nav .nav-link {
