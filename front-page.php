@@ -46,6 +46,9 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="row mt-3">
           <div class="col-lg-6">
             <h5><i class="fa fa-clock-o text-moton-orange"></i> Noon-4:00 p.m., Monday-Saturday</h5>
+             <div class="icon-offset">
+              <p>Also by appointment</p>
+             </div>
             <h5 class="mt-3"><i class="fa fa-map-marker text-moton-orange"></i>        Museum Address</h5>
             <div class="icon-offset">
               <address>
@@ -57,9 +60,13 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
           </div>
           <div class="col-lg-6">
-            <h5><i class="fa fa-ticket text-moton-orange"></i> Admission is free</h5>
+            <h5><i class="fa fa-ticket text-moton-orange"></i> Admission</h5>
             <div class="icon-offset">
-              <p>Admission is free for the general public. To schedule a guided tour for a group of 5 or more, we ask that you contact museum staff in advance using the information available at the link below.</p>
+              <p>Admission is free for the general public.</p>
+            </div>
+            <h5><i class="fa fa-group text-moton-orange"></i> School & Group Tours</h5>
+            <div class="icon-offset">
+              <p>To schedule a guided tour for a group of 5 or more, we ask that you contact museum staff in advance using the information available at the link below.</p>
               <a class="btn btn-primary" href="/visit">Plan Your Visit</a>
             </div>
           </div>
