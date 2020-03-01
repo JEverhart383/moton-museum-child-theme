@@ -36,13 +36,19 @@ $container = get_theme_mod( 'understrap_container_type' );
                   <div class="card-body">
                     <h5 class="card-title text-white"><?php the_field('give_cta_heading')?></h5>
                     <p class="w-33">
-                      <img src="<?php echo get_stylesheet_directory_uri() . '/images/donation-box.svg'; ?>" alt="">
+                      <img src="<?php echo get_stylesheet_directory_uri() .'/images/noun_hand-shake.svg' ?>">
                     </p>
                     <p class="card-text">
                       <?php the_field('give_cta_content')?>
                       <br>
-                      <a href="<?php the_field('give_cta_button_url')?>" class="btn btn-warning mt-3">
-                        <?php the_field('give_cta_button_text')?>
+                      <div class="btn-group mt-3">
+                        <a href="<?php echo get_field('give_cta_button_url') . '?donation_amount=25';?>" class="btn btn-warning">$25</a>
+                        <a href="<?php echo get_field('give_cta_button_url') . '?donation_amount=50';?>" class="btn btn-warning">$50</a>
+                        <a href="<?php echo get_field('give_cta_button_url') . '?donation_amount=100';?>" class="btn btn-warning">$100</a>
+                        <a href="<?php echo get_field('give_cta_button_url') . '?donation_amount=150';?>" class="btn btn-warning">$150</a>
+                        <a href="<?php echo get_field('give_cta_button_url') . '?donation_amount=200';?>" class="btn btn-warning">$200</a>
+                        <a href="<?php echo get_field('give_cta_button_url');?>" class="btn btn-warning">Other</a>
+                      </div>
                       </a>
                     </p>
                   </div>
