@@ -45,7 +45,7 @@ $container = get_theme_mod( 'understrap_container_type' );
               <p><?php the_field('office_hours'); ?></p>
               <h5><i class="mt-3 fa fa-ticket text-moton-orange"></i> Admission</h5>
               <p><?php the_field('admission'); ?></p>
-              <h5><i class="mt-3 fa fa-group text-moton-orange"></i> Group Tours</h5>
+              <h5><i class="mt-3 fa fa-group text-moton-orange"></i> School & Group Tours</h5>
               <p>
               <?php the_field('group_tours'); ?>
               </p>
