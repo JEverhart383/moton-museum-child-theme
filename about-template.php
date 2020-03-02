@@ -27,17 +27,35 @@ $container = get_theme_mod( 'understrap_container_type' );
       <div class="row">
         <div class="col-md-12 content-area" id="primary">
           <main class="site-main" id="main" role="main">
-            <div class="row">
-              <div class="col">
-                <?php the_content(); ?>
-              </div>
+            <!-- Main Content  -->
+          <div class="row">
+            <div class="col">
+              <?php the_content(); ?>
             </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+            <h2 class="moton-header"> <a id="mission-and-vision">Mission & Vision</a></h2>
+              <?php the_field('mission_and_vision'); ?>
+            </div>
+          </div>
+
 
           </main><!-- #main -->
 
         </div><!-- #primary -->
       </div><!-- .row end -->
     </div><!-- .container end -->
+    <div class="container-fluid bg-subtle-swoosh">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col">
+            <h2 class="moton-header"><a id="board-and-council">Board & Council</a></h2>
+            <?php the_field('board_and_council'); ?>
+          </div>
+        </div>
+      </div>
+    </div>
   </div><!-- #content -->
   <?php 
       include_once get_stylesheet_directory() . '/partials/child-page-cards.php';

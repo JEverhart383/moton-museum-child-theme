@@ -11926,13 +11926,16 @@ h3, h4, h5 {
   font-family: Tungsten;
   src: url(../fonts/tungsten-medium-2.otf); }
 
-* {
+body {
   font-family: 'Roboto', sans-serif; }
 
 h1, h2, h3, h4, h5 {
   text-transform: uppercase; }
 
-h1, h2, h3 {
+h1, h2, h3,
+h1 > span,
+h2 > span,
+h3 > span {
   font-family: Tungsten; }
 
 h4, h5 {
