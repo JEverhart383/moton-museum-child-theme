@@ -108,7 +108,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php 
 $give_page = get_page_by_template('give-template.php')[0];
 $learn_page = get_page_by_template('learn-template.php')[0];
-$events_page = get_page_by_template('events-template.php')[0];
+// $events_page = get_page_by_template('events-template.php')[0];
 ?>
 <div class="container-fluid alternating-tile-section mt-5">
     <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($learn_page->ID); ?>); background-size: cover; background-repeat: no-repeat;">
@@ -118,13 +118,13 @@ $events_page = get_page_by_template('events-template.php')[0];
         <?php echo get_the_excerpt($learn_page->ID); ?>
       </div>
   </div>
-  <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($events_page->ID); ?>); background-size: cover; background-repeat: no-repeat;">
+  <!-- <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($events_page->ID); ?>); background-size: cover; background-repeat: no-repeat;">
       <div class="col-lg-6 content-tile text-center">
         <h3 class="text-moton-eggplant mt-5"><?php echo $events_page->post_title; ?></h3>
         <?php echo get_the_excerpt($events_page->ID); ?>
       </div>
       <div class="col-lg-6"></div>
-  </div>
+  </div> -->
   <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($give_page->ID); ?>); background-size: cover; background-repeat: no-repeat;">
       <div class="col-lg-6"></div>
       <div class="col-lg-6 content-tile text-center">

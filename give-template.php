@@ -36,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                   <div class="card-body">
                     <h5 class="card-title text-white"><?php the_field('give_cta_heading')?></h5>
                     <p class="w-33">
-                      <img src="<?php echo get_stylesheet_directory_uri() .'/images/noun_hand-shake.svg' ?>">
+                      <!-- <img src="<?php echo get_stylesheet_directory_uri() .'/images/noun_hand-shake.svg' ?>"> -->
                     </p>
                     <p class="card-text">
                       <?php the_field('give_cta_content')?>
