@@ -1,11 +1,53 @@
-@import './child_theme_background'; 
-@import './child_theme_navigation'; 
+@import './child_theme_background';
+@import './child_theme_navigation';
 @import './child_theme_buttons';
 @import './child_theme_color_utils';
+@import './child_theme_index-single_overrides.scss';
+@import './child_theme_tribe_events_overrides'; 
+@import './child_theme_gravity_forms_overrides'; 
 
+@font-face {
+  font-family: Tungsten;
+  src: url(../fonts/tungsten-medium-2.otf);
+  // font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
 h1, h2, h3, h4, h5 {
   text-transform: uppercase;
+}
+
+h1, h2, h3,
+h1 > span,
+h2 > span,
+h3 > span
+{
+  font-family: Tungsten; 
+}
+
+h4, h5 {
+  font-weight: bold;
+}
+
+.site-main h2,
+.site-main h3 {
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+}
+
+.site-main .alert.alert-primary h2 {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.site-main a[href]:not(.btn)
+{
+  color: blue;
+  text-decoration: underline;
 }
 
 #wrapper-navbar nav.navbar {
@@ -18,7 +60,10 @@ h1, h2, h3, h4, h5 {
 }
 
 #wrapper-footer {
-  display: none;
+  padding-bottom: 0px;
+  .footer-social {
+    font-size: 1.25rem;
+  }
 }
 
 .homepage-hero .container,
@@ -32,14 +77,17 @@ h1, h2, h3, h4, h5 {
   h3 {
     color: #fff;
   }
-  height: 375px;
+  min-height: 375px;
 }
 
 .homepage-hero {
   min-height: 850px;
   background-color: #6c757d;
   color: #fff;
-  border-bottom: 7px solid $moton-orange;
+  border-bottom: 7px solid $moton-orange; 
+  h5 {
+    color: white;
+  }
 }
 
 .alternating-tile-section .row .content-tile {
@@ -55,4 +103,29 @@ h1, h2, h3, h4, h5 {
 
 #gallery-carousel .carousel-item {
   height: 650px;
+}
+#gallery-carousel .carousel-item .carousel-caption h5 {
+  color: #fff;
+}
+
+// Excerpts
+
+.understrap-read-more-link {
+  margin-top: 1rem;
+}
+
+// Accordian
+
+.accordion>.card .card-header {
+  background-color: $moton-eggplant;
+  button {
+    color: #fff;
+    text-decoration: underline;
+    i.fa-minus {
+      display: none;
+    }
+  }
+  button[aria-expanded="true"] i.fa-plus {
+    display: none;
+  }
 }

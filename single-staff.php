@@ -14,7 +14,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <?php while ( have_posts() ) : the_post(); ?>
-<div class="jumbotron jumbotron-fluid listing-hero bg-triangles-brown-bg-1">
+<div class="jumbotron jumbotron-fluid bg-triangles-purple-bg-1">
   <div class="container">
     <h1 class="display-4">Moton Museum Staff: <?php the_title(); ?> </h1>
   </div>
@@ -35,7 +35,6 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
             <div class="col-lg-8 mt-3">
               <h2><?php echo $staff['full_name']?></h2>
-              <hr>
               <h4 class="mb-2 text-muted"><?php echo $staff['position']?></h4>
               <?php if($staff['moton_resident_scholar'] === TRUE):?>
               <span class="badge badge-pill badge-primary">Moton Resident Scholar</span>
@@ -51,7 +50,6 @@ $container = get_theme_mod( 'understrap_container_type' );
           <div class="row mt-5">
             <div class="col-lg-12">
               <h3>Biography</h3>
-              <hr>
               <?php the_content(); ?>
             </div>
           </div>

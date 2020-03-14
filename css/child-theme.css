@@ -5,6 +5,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -11697,6 +11698,12 @@ figure.woocommerce-product-gallery__wrapper {
   min-height: 250px;
   color: #fff; }
 
+.bg-triangles-purple-bg-1 {
+  background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/triangles-purple-bg-1.svg");
+  background-size: cover;
+  min-height: 250px;
+  color: #fff; }
+
 .bg-triangles-brown-bg-2 {
   background-image: url("/wp-content/themes/moton-museum-child-theme/images/backgrounds/triangles-brown-bg-2.svg");
   background-size: cover;
@@ -11748,11 +11755,8 @@ figure.woocommerce-product-gallery__wrapper {
     max-width: 300px;
     font-size: 2em; }
 
-.navbar-brand.custom-logo-link {
-  padding-top: 0px;
-  padding-bottom: 0px; }
-  .navbar-brand.custom-logo-link img {
-    width: 145px; }
+.navbar-brand.custom-logo-link img {
+  width: 250px; }
 
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-nav .nav-link {
@@ -11797,6 +11801,10 @@ figure.woocommerce-product-gallery__wrapper {
     text-decoration: none;
     color: #48182D; }
 
+#index-wrapper .site-main header.entry-header h2.entry-title a {
+  color: #48182D;
+  text-decoration: none; }
+
 h1.entry-title,
 .site-main h2,
 .site-main h3 {
@@ -11811,8 +11819,140 @@ h1.entry-title,
 h3, h4, h5 {
   color: #48182D; }
 
+#index-wrapper,
+#single-wrapper,
+#page-wrapper {
+  padding: 0; }
+  #index-wrapper .content-area,
+  #single-wrapper .content-area,
+  #page-wrapper .content-area {
+    background-color: #ededed; }
+  #index-wrapper article,
+  #single-wrapper article,
+  #page-wrapper article {
+    background-color: white;
+    padding: 1.25rem;
+    margin: .5rem 0;
+    border-radius: 5px;
+    border: 1px solid #d4d4d4; }
+  #index-wrapper .widget-area,
+  #single-wrapper .widget-area,
+  #page-wrapper .widget-area {
+    padding-top: 1rem;
+    background-color: #48182D;
+    color: white; }
+    #index-wrapper .widget-area aside.widget:nth-child(n+2),
+    #single-wrapper .widget-area aside.widget:nth-child(n+2),
+    #page-wrapper .widget-area aside.widget:nth-child(n+2) {
+      margin-top: 3rem; }
+    #index-wrapper .widget-area h3.widget-title,
+    #single-wrapper .widget-area h3.widget-title,
+    #page-wrapper .widget-area h3.widget-title {
+      margin: .5rem 0;
+      color: #fff; }
+    #index-wrapper .widget-area aside.widget_search .input-group .btn.btn-primary, #index-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-primary[type=submit], .wpcf7 #index-wrapper .widget-area aside.widget_search .input-group input.btn-primary[type=submit],
+    #single-wrapper .widget-area aside.widget_search .input-group .btn.btn-primary,
+    #single-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-primary[type=submit],
+    .wpcf7 #single-wrapper .widget-area aside.widget_search .input-group input.btn-primary[type=submit],
+    #page-wrapper .widget-area aside.widget_search .input-group .btn.btn-primary,
+    #page-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-primary[type=submit],
+    .wpcf7 #page-wrapper .widget-area aside.widget_search .input-group input.btn-primary[type=submit] {
+      border-top-right-radius: .25rem;
+      border-bottom-right-radius: .25rem;
+      color: #fff;
+      background-color: #c46819;
+      border-color: #c46819; }
+      #index-wrapper .widget-area aside.widget_search .input-group .btn.btn-primary:hover, #index-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-primary:hover[type=submit], .wpcf7 #index-wrapper .widget-area aside.widget_search .input-group input.btn-primary:hover[type=submit],
+      #single-wrapper .widget-area aside.widget_search .input-group .btn.btn-primary:hover,
+      #single-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-primary:hover[type=submit],
+      .wpcf7 #single-wrapper .widget-area aside.widget_search .input-group input.btn-primary:hover[type=submit],
+      #page-wrapper .widget-area aside.widget_search .input-group .btn.btn-primary:hover,
+      #page-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-primary:hover[type=submit],
+      .wpcf7 #page-wrapper .widget-area aside.widget_search .input-group input.btn-primary:hover[type=submit] {
+        color: #fff;
+        background-color: #a25615;
+        border-color: #975013; }
+    #index-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title,
+    #index-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title a,
+    #index-wrapper .widget-area aside.tribe-events-list-widget p.tribe-events-widget-link a,
+    #single-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title,
+    #single-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title a,
+    #single-wrapper .widget-area aside.tribe-events-list-widget p.tribe-events-widget-link a,
+    #page-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title,
+    #page-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title a,
+    #page-wrapper .widget-area aside.tribe-events-list-widget p.tribe-events-widget-link a {
+      color: #fff !important; }
+    #index-wrapper .widget-area aside.gform_widget .email-newsletter #input_1_1,
+    #single-wrapper .widget-area aside.gform_widget .email-newsletter #input_1_1,
+    #page-wrapper .widget-area aside.gform_widget .email-newsletter #input_1_1 {
+      width: 100%; }
+    #index-wrapper .widget-area aside.gform_widget .email-newsletter #gform_submit_button_1,
+    #single-wrapper .widget-area aside.gform_widget .email-newsletter #gform_submit_button_1,
+    #page-wrapper .widget-area aside.gform_widget .email-newsletter #gform_submit_button_1 {
+      color: #fff;
+      background-color: #c46819;
+      border-color: #c46819; }
+      #index-wrapper .widget-area aside.gform_widget .email-newsletter #gform_submit_button_1:hover,
+      #single-wrapper .widget-area aside.gform_widget .email-newsletter #gform_submit_button_1:hover,
+      #page-wrapper .widget-area aside.gform_widget .email-newsletter #gform_submit_button_1:hover {
+        color: #fff;
+        background-color: #a25615;
+        border-color: #975013; }
+
+.tribe-events-c-search__button {
+  color: #fff !important;
+  background-color: #48182d !important;
+  border-color: #48182d !important;
+  border-radius: 0px !important;
+  font-family: 'Roboto', sans-serif !important; }
+
+.tribe-events-calendar-month__day-date-link {
+  color: #48182D !important; }
+
+.tribe-common .tribe-common-anchor-alt {
+  border-bottom: 2px solid #48182D !important; }
+
+.gform_wrapper h3.gform_title,
+.gform_wrapper h2.gsection_title {
+  font-size: 1.75rem !important;
+  border-bottom: 3px solid #c46819 !important; }
+
+.gform_button {
+  background-color: #48182D !important;
+  color: #fff !important;
+  padding: .5rem .75rem !important; }
+
+@font-face {
+  font-family: Tungsten;
+  src: url(../fonts/tungsten-medium-2.otf); }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
 h1, h2, h3, h4, h5 {
   text-transform: uppercase; }
+
+h1, h2, h3,
+h1 > span,
+h2 > span,
+h3 > span {
+  font-family: Tungsten; }
+
+h4, h5 {
+  font-weight: bold; }
+
+.site-main h2,
+.site-main h3 {
+  margin-top: .75rem;
+  margin-bottom: .75rem; }
+
+.site-main .alert.alert-primary h2 {
+  padding-bottom: 0;
+  border-bottom: none; }
+
+.site-main a[href]:not(.btn) {
+  color: blue;
+  text-decoration: underline; }
 
 #wrapper-navbar nav.navbar {
   border-bottom: 2px solid #8E8603; }
@@ -11822,7 +11962,9 @@ h1, h2, h3, h4, h5 {
   padding: 30px 0 0 0; }
 
 #wrapper-footer {
-  display: none; }
+  padding-bottom: 0px; }
+  #wrapper-footer .footer-social {
+    font-size: 1.25rem; }
 
 .homepage-hero .container,
 .template-hero {
@@ -11831,7 +11973,7 @@ h1, h2, h3, h4, h5 {
 #cta-container {
   background-color: #1f1f1f;
   color: #fff;
-  height: 375px; }
+  min-height: 375px; }
   #cta-container h3 {
     color: #fff; }
 
@@ -11840,6 +11982,8 @@ h1, h2, h3, h4, h5 {
   background-color: #6c757d;
   color: #fff;
   border-bottom: 7px solid #C46819; }
+  .homepage-hero h5 {
+    color: white; }
 
 .alternating-tile-section .row .content-tile {
   min-height: 350px;
@@ -11851,6 +11995,22 @@ h1, h2, h3, h4, h5 {
 
 #gallery-carousel .carousel-item {
   height: 650px; }
+
+#gallery-carousel .carousel-item .carousel-caption h5 {
+  color: #fff; }
+
+.understrap-read-more-link {
+  margin-top: 1rem; }
+
+.accordion > .card .card-header {
+  background-color: #48182D; }
+  .accordion > .card .card-header button {
+    color: #fff;
+    text-decoration: underline; }
+    .accordion > .card .card-header button i.fa-minus {
+      display: none; }
+  .accordion > .card .card-header button[aria-expanded="true"] i.fa-plus {
+    display: none; }
 
 /*
 * Use existing Bootstrap 4 classes and

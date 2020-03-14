@@ -1,11 +1,11 @@
 {
-    "key": "group_5e132c0589339",
-    "title": "Visit",
+    "key": "group_5e4f73e5e47a1",
+    "title": "Give Page",
     "fields": [
         {
-            "key": "field_5e132c143d464",
-            "label": "Guest Hours",
-            "name": "guest_hours",
+            "key": "field_5e4f73e5ecadd",
+            "label": "Give CTA Heading",
+            "name": "give_cta_heading",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -22,9 +22,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_5e132c3a3d465",
-            "label": "Office Hours",
-            "name": "office_hours",
+            "key": "field_5e4f743ba5fd1",
+            "label": "Give CTA Content",
+            "name": "give_cta_content",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -41,9 +41,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_5e132c473d466",
-            "label": "Admission",
-            "name": "admission",
+            "key": "field_5e4f745267927",
+            "label": "Give CTA Button Text",
+            "name": "give_cta_button_text",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -60,10 +60,10 @@
             "maxlength": ""
         },
         {
-            "key": "field_5e132c4e3d467",
-            "label": "Group Tours",
-            "name": "group_tours",
-            "type": "wysiwyg",
+            "key": "field_5e4f746667928",
+            "label": "Give CTA Button Url",
+            "name": "give_cta_button_url",
+            "type": "url",
             "instructions": "",
             "required": 1,
             "conditional_logic": 0,
@@ -73,48 +73,7 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_5e4f502095f9b",
-            "label": "Policy Intro",
-            "name": "policy_intro",
-            "type": "wysiwyg",
-            "instructions": "This is the text that will be displayed before the policy accordion",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_5e2b261a9fc69",
-            "label": "Policies",
-            "name": "policies",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "placeholder": ""
         }
     ],
     "location": [
@@ -122,7 +81,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "visit-template.php"
+                "value": "give-template.php"
             }
         ]
     ],
@@ -134,5 +93,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1582256276
+    "modified": 1582265682
 }

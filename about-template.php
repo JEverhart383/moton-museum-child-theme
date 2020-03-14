@@ -14,10 +14,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <?php while ( have_posts() ) : the_post(); ?>
-<div class="jumbotron jumbotron-fluid template-hero" style="background-image: linear-gradient(
-  rgba(0, 0, 0, 0.65),
-  rgba(0, 0, 0, 0.65)
-), url(<?php echo get_the_post_thumbnail_url(); ?>); background-size: cover; background-repeat: no-repeat;">
+<div class="jumbotron jumbotron-fluid template-hero bg-triangles-purple-bg-1">
 <div class="container">
     <h1 class="display-4"><?php the_title(); ?> </h1>
   </div>
@@ -30,22 +27,24 @@ $container = get_theme_mod( 'understrap_container_type' );
       <div class="row">
         <div class="col-md-12 content-area" id="primary">
           <main class="site-main" id="main" role="main">
-            <div class="row">
-              <div class="col">
-                <?php the_content(); ?>
-              </div>
+            <!-- Main Content  -->
+          <div class="row">
+            <div class="col">
+              <?php the_content(); ?>
             </div>
-
+          </div>
           </main><!-- #main -->
 
         </div><!-- #primary -->
       </div><!-- .row end -->
-    </div><!-- .container end -->
   </div><!-- #content -->
   <?php 
       include_once get_stylesheet_directory() . '/partials/child-page-cards.php';
     ?>
   <?php endwhile; // end of the loop. ?>
+  <div class="container-fluid text-center">
+    <img src="<?php echo get_stylesheet_directory_uri() . '/images/motonmuseum_affiliate_banner.jpg'; ?>" alt="" class="fluid mt-3 mb-3">
+  </div>
   <?php 
     include_once get_stylesheet_directory() . '/partials/configurable-cta.php';
   ?>

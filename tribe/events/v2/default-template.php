@@ -18,31 +18,23 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 $post_id_to_query = 8161;
 ?>
-<div class="jumbotron jumbotron-fluid template-hero" style="background-image: linear-gradient(
-  rgba(0, 0, 0, 0.65),
-  rgba(0, 0, 0, 0.65)
-), url(<?php echo get_the_post_thumbnail_url($post_id_to_query); ?>); background-size: cover; background-repeat: no-repeat;">
-<div class="container">
+<div class="jumbotron jumbotron-fluid template-hero bg-triangles-purple-bg-1">
+  <div class="container">
     <h1 class="display-4">Events</h1>
   </div>
 </div>
-<div class="container">
-  <div class="row">
-    <div class="col">
-      Some Info About Reserving Moton Here
-    </div>
-  </div>
+<div class="container" id="events-wrapper">
+    <?php
+      echo tribe( Template_Bootstrap::class )->get_view_html();
+    ?>
 </div>
 
-<?php
-echo tribe( Template_Bootstrap::class )->get_view_html();
+<?php 
+  include_once get_stylesheet_directory() . '/partials/child-page-cards.php';
 ?>
-  <?php 
-    include_once get_stylesheet_directory() . '/partials/child-page-cards.php';
-  ?>
-  <?php 
-    include_once get_stylesheet_directory() . '/partials/configurable-cta.php';
-  ?>
+<?php 
+  include_once get_stylesheet_directory() . '/partials/configurable-cta.php';
+?>
 <?php
 get_footer();
 ?>
