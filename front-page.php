@@ -83,8 +83,8 @@ $container = get_theme_mod( 'understrap_container_type' );
         <footer class="blockquote-footer">Don Baker, <cite title="The Washington Post Magazine">The Washington Post Magazine</cite></footer>
         </blockquote>
         <p>Farmville, Virginia’s former Robert Russa Moton High School, now a National Historic Landmark and museum, is the birthplace of America’s student-led civil rights revolution.</p>
-        <a href="/mission-vision" class="btn btn-primary">Mission & Vision</a>
-        <a href="/board-council" class="btn btn-primary">Board & Council</a>
+        <a href="/about/mission-vision/" class="btn btn-primary">Mission & Vision</a>
+        <a href="/about/board-council/" class="btn btn-primary">Board & Council</a>
       </div>
     </div>
     <div class="row mt-5">
