@@ -11896,7 +11896,7 @@ h3, h4, h5 {
       #single-wrapper .widget-area aside.gform_widget .email-newsletter #gform_submit_button_1:hover,
       #page-wrapper .widget-area aside.gform_widget .email-newsletter #gform_submit_button_1:hover {
         color: #fff;
-        background-color: #a25615;
+        background-color: #a25615 !important;
         border-color: #975013; }
 
 .tribe-events-c-search__button {
