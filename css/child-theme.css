@@ -12002,6 +12002,9 @@ h4, h5 {
 .understrap-read-more-link {
   margin-top: 1rem; }
 
+.alternating-tile-section .understrap-read-more-link {
+  display: none; }
+
 .accordion > .card .card-header {
   background-color: #48182D; }
   .accordion > .card .card-header button {
