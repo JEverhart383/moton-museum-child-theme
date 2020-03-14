@@ -11859,9 +11859,9 @@ h3, h4, h5 {
     .wpcf7 #page-wrapper .widget-area aside.widget_search .input-group input.btn-primary[type=submit] {
       border-top-right-radius: .25rem;
       border-bottom-right-radius: .25rem;
-      color: #fff !important;
-      background-color: #c46819 !important;
-      border-color: #c46819 !important; }
+      color: #fff;
+      background-color: #c46819;
+      border-color: #c46819; }
       #index-wrapper .widget-area aside.widget_search .input-group .btn.btn-primary:hover, #index-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-primary:hover[type=submit], .wpcf7 #index-wrapper .widget-area aside.widget_search .input-group input.btn-primary:hover[type=submit],
       #single-wrapper .widget-area aside.widget_search .input-group .btn.btn-primary:hover,
       #single-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-primary:hover[type=submit],
@@ -11869,9 +11869,9 @@ h3, h4, h5 {
       #page-wrapper .widget-area aside.widget_search .input-group .btn.btn-primary:hover,
       #page-wrapper .widget-area aside.widget_search .input-group .wpcf7 input.btn-primary:hover[type=submit],
       .wpcf7 #page-wrapper .widget-area aside.widget_search .input-group input.btn-primary:hover[type=submit] {
-        color: #fff !important;
-        background-color: #a25615 !important;
-        border-color: #975013 !important; }
+        color: #fff;
+        background-color: #a25615;
+        border-color: #975013; }
     #index-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title,
     #index-wrapper .widget-area aside.tribe-events-list-widget h4.tribe-event-title a,
     #index-wrapper .widget-area aside.tribe-events-list-widget p.tribe-events-widget-link a,
@@ -11889,15 +11889,15 @@ h3, h4, h5 {
     #index-wrapper .widget-area aside.gform_widget .email-newsletter #gform_submit_button_1,
     #single-wrapper .widget-area aside.gform_widget .email-newsletter #gform_submit_button_1,
     #page-wrapper .widget-area aside.gform_widget .email-newsletter #gform_submit_button_1 {
-      color: #fff;
-      background-color: #c46819;
-      border-color: #c46819; }
+      color: #fff !important;
+      background-color: #c46819 !important;
+      border-color: #c46819 !important; }
       #index-wrapper .widget-area aside.gform_widget .email-newsletter #gform_submit_button_1:hover,
       #single-wrapper .widget-area aside.gform_widget .email-newsletter #gform_submit_button_1:hover,
       #page-wrapper .widget-area aside.gform_widget .email-newsletter #gform_submit_button_1:hover {
-        color: #fff;
+        color: #fff !important;
         background-color: #a25615 !important;
-        border-color: #975013; }
+        border-color: #975013 !important; }
 
 .tribe-events-c-search__button {
   color: #fff !important;
