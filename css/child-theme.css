@@ -12012,6 +12012,9 @@ h4, h5 {
   .accordion > .card .card-header button[aria-expanded="true"] i.fa-plus {
     display: none; }
 
+article img {
+  margin: 1rem 0; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
