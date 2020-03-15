@@ -35,7 +35,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<a href="https://twitter.com/motonmuseum?lang=en"><i class="fa fa-twitter   footer-social text-moton-eggplant"></i></a>&nbsp;
 							<a href="https://www.facebook.com/motonmuseum/"><i class="fa fa-facebook  footer-social text-moton-eggplant"></i></a>&nbsp;
 							<a href="https://www.instagram.com/explore/locations/261118163/robert-russa-moton-museum"><i class="fa fa-instagram footer-social text-moton-eggplant"></i></a>&nbsp;
-							<a href=""><i class="fa fa-google    footer-social text-moton-eggplant"></i></a>&nbsp;
 						</p>
 					</div><!-- .site-info -->
 
