@@ -87,6 +87,9 @@ $container = get_theme_mod( 'understrap_container_type' );
         <a href="/about/board-council/" class="btn btn-primary">Board & Council</a>
       </div>
     </div>
+    <?php 
+      include_once get_stylesheet_directory() . '/partials/upcoming-events.php';
+    ?>
     <div class="row mt-5">
       <div class="col-lg-12">
         <h2 class="moton-header mb-3">Rent The Museum</h2>
@@ -126,12 +129,12 @@ $learn_page = get_page_by_template('learn-template.php')[0];
       <div class="col-lg-6"></div>
   </div> -->
   <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($give_page->ID); ?>); background-size: cover; background-repeat: no-repeat;">
-      <div class="col-lg-6"></div>
       <div class="col-lg-6 content-tile text-center">
         <h3 class="text-moton-eggplant mt-5"><?php echo $give_page->post_title; ?></h3>
         <?php echo get_the_excerpt($give_page->ID); ?>
-	<a href="/give" class="btn btn-primary">Read More</a>
+        <a href="/give" class="btn btn-primary">Read More</a>
       </div>
+      <div class="col-lg-6"></div>
   </div>
 </div>
 
