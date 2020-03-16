@@ -119,7 +119,6 @@ function moton_create_event_details_from_tribe_events($events_query) {
 	usort($events['featured_events'], 'sort_by_startdate');
 	$output = array_slice($events['regular_events'], 0, 3);
 	$events['regular_events'] = $output;
-	var_dump($output);
 	return $events;
 }
 

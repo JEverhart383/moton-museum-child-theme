@@ -1,6 +1,5 @@
 <?php
   $upcoming_events = moton_get_upcoming_events();
-  // var_dump($upcoming_events);
 ?>
 
 <div class="row mt-5">
