@@ -10,8 +10,9 @@
       <div class="col-lg-6">
         <div>
           <h4><?php echo $upcoming_events['featured_events'][0]['title']; ?></h4>
-          <h5><?php echo $upcoming_events['featured_events'][0]['event_start']; ?> to <?php echo $upcoming_events['featured_events'][0]['event_end']; ?></h5>
-          <?php echo $upcoming_events['featured_events'][0]['content']; ?>
+          <h5><?php echo $upcoming_events['featured_events'][0]['friendly_date']; ?><br>
+          <?php echo $upcoming_events['featured_events'][0]['friendly_time']; ?></h5>
+          <p><?php echo $upcoming_events['featured_events'][0]['content']; ?></p>
         </div>
         <a href="<?php echo $upcoming_events['featured_events'][0]['permalink']  ?>" class="btn btn-primary mb-3">Learn More</a>
       </div>
@@ -27,8 +28,9 @@
          <img src="<?php echo $event['featured_image'] ?>" alt="" class="card-img-top">
          <div class="card-body">
          <h5><?php echo $event['title'] ?></h5>
-           <p><?php echo $event['event_start'] ?> to <?php echo $event['event_end'] ?></p>
-            <a href="<?php echo $event['permalink'] ?>" class="btn btn-primary btn-block">Learn More</a>
+           <p><?php echo $event['friendly_date']; ?></p>
+           <p><?php echo $event['friendly_time']; ?></p>
+            <a href="<?php echo $event['permalink']; ?>" class="btn btn-primary btn-block">Learn More</a>
           </div>
        </div>
       </div>

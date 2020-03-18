@@ -103,8 +103,14 @@ function moton_create_event_details_from_tribe_events($events_query) {
 			'featured' => get_post_meta($event->ID, '_tribe_featured', true),
 			'event_start' => get_post_meta($event->ID, '_EventStartDate', true),
 			'event_end' => get_post_meta($event->ID, '_EventEndDate', true),
-			'content' => ''
+			'content' => '',
+			'friendly_date' => '',
+			'friendly_time' => ''
 		];
+
+		$event_details['friendly_date'] = moton_convert_to_friendly_date($event_details);
+		$event_details['friendly_time'] = moton_convert_to_friendly_time($event_details);
+
 		if ($event_details['featured'] == '1') {
 			$event_details['content'] = get_the_content($event->ID);
 			array_push($events['featured_events'], $event_details);
@@ -118,12 +124,28 @@ function moton_create_event_details_from_tribe_events($events_query) {
 	usort($events['regular_events'], 'sort_by_startdate');
 	usort($events['featured_events'], 'sort_by_startdate');
 	$output = array_slice($events['regular_events'], 0, 3);
-	$events['regular_events'] = $output;
+	$reversed = array_reverse($output);
+	$events['regular_events'] = $reversed;
 	return $events;
 }
 
-function moton_convert_to_friendly_date($datestring) {
+function moton_convert_to_friendly_date($event_details) {
+	$start_datetime = getdate(strtotime($event_details['event_start']));
+	$end_datetime = getdate(strtotime($event_details['event_end']));;
+	$day_of_week = $start_datetime['weekday'];
+	$month = $start_datetime['month'];
+	$day = $start_datetime['mday'];
+	$year = $start_datetime['year'];
+	$event_date = $day_of_week . ', ' . $month . ' ' . $day . ', ' . $year;
+	return $event_date;
+}
 
+function moton_convert_to_friendly_time($event_details) {
+	$start_timestamp = strtotime($event_details['event_start']);
+	$end_timestamp = strtotime($event_details['event_end']);
+	$start_formatted = date('h:i A', $start_timestamp);
+	$end_formatted = date('h:i A', $end_timestamp);
+	return $start_formatted . ' to ' . $end_formatted;
 }
 
 
