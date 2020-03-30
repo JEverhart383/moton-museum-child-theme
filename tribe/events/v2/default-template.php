@@ -49,9 +49,10 @@ $child_page_query = new WP_Query(array(
     <div class="col-lg-4 col-md-6">
         <div class="card mt-3">
           <img src="<?php echo get_the_post_thumbnail_url(get_the_ID());?>" alt="" class="card-img-top mh-225">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title"><?php echo get_the_title();?></h5>
-            <p class="card-text"><?php echo get_the_excerpt();?></p>
+            
+            <?php echo get_the_excerpt();?>
           </div>
         </div>
     </div>

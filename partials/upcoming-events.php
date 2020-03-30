@@ -26,11 +26,11 @@
       <div class="col-lg-4 mt-3">
        <div class="card">
          <img src="<?php echo $event['featured_image'] ?>" alt="" class="card-img-top">
-         <div class="card-body">
+         <div class="card-body d-flex flex-column">
          <h5><?php echo $event['title'] ?></h5>
            <p><?php echo $event['friendly_date']; ?></p>
            <p><?php echo $event['friendly_time']; ?></p>
-            <a href="<?php echo $event['permalink']; ?>" class="btn btn-primary btn-block">Learn More</a>
+          <a href="<?php echo $event['permalink']; ?>" class="btn btn-primary btn-block mt-auto">Learn More</a>
           </div>
        </div>
       </div>
