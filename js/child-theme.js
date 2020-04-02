@@ -7071,3 +7071,10 @@ function setHeightToTallestCard() {
   }
 
 }
+
+function bootstrapSearchForm() {
+  //move form from header into collapsable area
+  //add 
+  const searchLink = document.querySelector(".nav-link[href='#search']")
+
+}
