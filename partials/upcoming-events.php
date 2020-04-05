@@ -23,7 +23,7 @@
     <?php endif; ?>
     <div class="row child-card-container">
       <?php foreach($upcoming_events['regular_events'] as $event): ?>
-      <div class="col-lg-4 mt-3">
+      <div class="col-lg-4 mt-3 d-flex align-items-stretch">
        <div class="card">
          <img src="<?php echo $event['featured_image'] ?>" alt="" class="card-img-top">
          <div class="card-body d-flex flex-column">

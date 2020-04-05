@@ -12,7 +12,7 @@ $child_page_query = new WP_Query(array(
 <div class="container mb-5 child-card-container">
   <div class="row">
   <?php while($child_page_query->have_posts()): $child_page_query->the_post(); ?>
-    <div class="col-lg-4 col-md-6">
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
         <div class="card mt-3">
           <img src="<?php echo get_the_post_thumbnail_url(get_the_ID());?>" alt="" class="card-img-top mh-225">
           <div class="card-body d-flex flex-column">

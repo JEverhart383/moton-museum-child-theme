@@ -10,7 +10,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="jumbotron jumbotron-fluid homepage-hero" style="background-image: linear-gradient(
       rgba(0, 0, 0, 0.75),
       rgba(0, 0, 0, 0.75)
-    ), url(<?php echo get_stylesheet_directory_uri() . '/images/moton-museum-header-image-compressed.jpg' ?>); background-size: cover; background-repeat: no-repeat;">
+    ), url(<?php echo get_stylesheet_directory_uri() . '/images/moton-museum-header-image-compressed.jpg' ?>); background-size: cover; background-repeat: no-repeat; background-position-x: 25%; background-position-y: 25%;">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
