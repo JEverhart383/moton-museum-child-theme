@@ -11954,7 +11954,7 @@ h4, h5 {
   color: blue;
   text-decoration: underline; }
 
-#wrapper-navbar nav.navbar {
+#wrapper-navbar {
   border-bottom: 2px solid #8E8603; }
 
 #wrapper-footer-full {
@@ -12017,6 +12017,13 @@ h4, h5 {
 
 article img {
   margin: 1rem 0; }
+
+.search-wrapper {
+  display: none; }
+  .search-wrapper:show {
+    display: inline-block; }
+  .search-wrapper #searchform input {
+    border-radius: 0px; }
 
 /*
 * Use existing Bootstrap 4 classes and

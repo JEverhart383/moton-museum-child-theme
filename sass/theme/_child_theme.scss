@@ -50,7 +50,7 @@ h4, h5 {
   text-decoration: underline;
 }
 
-#wrapper-navbar nav.navbar {
+#wrapper-navbar {
   border-bottom: 2px solid $moton-green;
 }
 
@@ -138,4 +138,18 @@ h4, h5 {
 
 article img {
   margin: 1rem 0;
+}
+
+//Search 
+
+.search-wrapper {
+  display:none;
+    &:show {
+      display: inline-block;
+    }
+  #searchform {
+    input {
+      border-radius: 0px;
+    }
+  }
 }
