@@ -30,7 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php
 $event_page_query = new WP_Query(array(
   'post_type' => 'page',
-  'pagename' => 'events'
+  'pagename' => 'events-placeholder'
 ));
 wp_reset_postdata();
 $events_id = $event_page_query->posts[0]->ID;
