@@ -17,7 +17,7 @@
         <a href="<?php echo $upcoming_events['featured_events'][0]['permalink']  ?>" class="btn btn-primary mb-3">Learn More</a>
       </div>
       <div class="col-lg-6">
-        <img src="<?php echo $upcoming_events['featured_events'][0]['featured_image'] ?>" alt="Moton Auditorium" class="fluid">
+        <img src="<?php echo $upcoming_events['featured_events'][0]['featured_image'] ?>" alt="Moton Museum event image" class="fluid">
       </div>
     </div>
     <?php endif; ?>
@@ -25,7 +25,7 @@
       <?php foreach($upcoming_events['regular_events'] as $event): ?>
       <div class="col-lg-4 mt-3 d-flex align-items-stretch">
        <div class="card">
-         <img src="<?php echo $event['featured_image'] ?>" alt="" class="card-img-top">
+         <img src="<?php echo $event['featured_image'] ?>" alt="Moton Museum event image" class="card-img-top">
          <div class="card-body d-flex flex-column">
          <h5><?php echo $event['title'] ?></h5>
            <p><?php echo $event['friendly_date']; ?></p>
