@@ -100,6 +100,7 @@ function moton_create_event_details_from_tribe_events($events_query) {
 		$event_details = [
 			'title' => get_the_title($event->ID),
 			'featured_image' => get_the_post_thumbnail_url($event->ID),
+			'featured_image_alt' => get_post_meta( get_post_thumbnail_id($event->ID), '_wp_attachment_image_alt', true),
 			'permalink' => get_the_permalink($event->ID),
 			'featured' => get_post_meta($event->ID, '_tribe_featured', true),
 			'event_start' => get_post_meta($event->ID, '_EventStartDate', true),
