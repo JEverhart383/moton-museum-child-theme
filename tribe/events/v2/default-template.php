@@ -28,16 +28,10 @@ $container = get_theme_mod( 'understrap_container_type' );
     ?>
 </div>
 <?php
-$event_page_query = new WP_Query(array(
-  'post_type' => 'page',
-  'pagename' => 'events-placeholder'
-));
-wp_reset_postdata();
-$events_id = $event_page_query->posts[0]->ID;
 $child_page_query = new WP_Query(array(
   'post_type' => 'page',
   'posts_per_page' => -1,
-  'post_parent' => $events_id ,
+  'post__in' => array(2508, 8224),
   'order_by' => 'menu_order',
   'order' => 'ASC'
 ));
