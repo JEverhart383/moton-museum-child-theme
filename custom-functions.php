@@ -124,6 +124,13 @@ function moton_create_event_details_from_tribe_events($events_query) {
 	}
 	usort($events['regular_events'], 'sort_by_startdate');
 	usort($events['featured_events'], 'sort_by_startdate');
+
+	function remove_old_events($event) {
+		return strtotime($event['event_start']) > time();
+	}
+	$events['regular_events'] = array_filter($events['regular_events'], 'remove_old_events');
+	$events['featured_events'] = array_filter($events['featured_events'], 'remove_old_events');
+
 	$output = array_slice($events['regular_events'], 0, 3);
 	$reversed = array_reverse($output);
 	$events['regular_events'] = $reversed;

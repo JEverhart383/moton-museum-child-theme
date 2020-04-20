@@ -5,7 +5,7 @@
 <div class="row mt-5">
   <div class="col-lg-12">
     <h2 class="moton-header mb-3">Upcoming Events</h2>
-    <?php if($upcoming_events['featured_events'][0]): ?>
+    <?php if(count($upcoming_events['featured_events']) > 0 ): ?>
     <div class="row">
       <div class="col-lg-6">
         <div>
@@ -21,6 +21,7 @@
       </div>
     </div>
     <?php endif; ?>
+    <?php if(count($upcoming_events['regular_events']) > 0 ): ?>
     <div class="row child-card-container">
       <?php foreach($upcoming_events['regular_events'] as $event): ?>
       <div class="col-lg-4 mt-3 d-flex align-items-stretch">
@@ -36,5 +37,6 @@
       </div>
       <?php endforeach; ?>
     </div>
+      <? endif; ?>
   </div>
 </div>
