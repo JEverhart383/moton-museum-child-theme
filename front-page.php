@@ -10,14 +10,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="jumbotron jumbotron-fluid homepage-hero" style="background-image: linear-gradient(
       rgba(0, 0, 0, 0.75),
       rgba(0, 0, 0, 0.75)
-    ), url(<?php echo get_stylesheet_directory_uri() . '/images/Free-School-opening-day-1963.jpg' ?>); background-size: cover; background-repeat: no-repeat;">
+    ), url(<?php echo get_stylesheet_directory_uri() . '/images/moton-museum-header-image-compressed.jpg' ?>); background-size: cover; background-repeat: no-repeat; background-position-x: 25%; background-position-y: 25%;">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <h1 class="display-4">"The Eyes of the World Are On Us."</h1>
         <h5 class="display-5">- Rev. L Francis Griffin</h5>
         <p class="lead">Farmville, Virginia's former Robert Russa Moton High School, now a National Historical Landmark and museum, is the birthplace of America's student-led Civil Rights Revolution.
-          <br>
+        <br>
           <br>
           <a href="/learn" class="btn btn-outline-white">Learn More</a>
           <a href="/visit" class="btn btn-outline-white">Plan Your Visit</a>
@@ -83,11 +83,13 @@ $container = get_theme_mod( 'understrap_container_type' );
         <footer class="blockquote-footer">Don Baker, <cite title="The Washington Post Magazine">The Washington Post Magazine</cite></footer>
         </blockquote>
         <p>Farmville, Virginia’s former Robert Russa Moton High School, now a National Historic Landmark and museum, is the birthplace of America’s student-led civil rights revolution.</p>
-        <a href="" class="btn btn-primary">Mission</a>
-        <a href="" class="btn btn-primary">Board</a>
-        <a href="" class="btn btn-primary">Council</a>
+        <a href="/about/mission-vision/" class="btn btn-primary">Mission & Vision</a>
+        <a href="/about/board-council/" class="btn btn-primary">Board & Council</a>
       </div>
     </div>
+    <?php 
+      include_once get_stylesheet_directory() . '/partials/upcoming-events.php';
+    ?>
     <div class="row mt-5">
       <div class="col-lg-12">
         <h2 class="moton-header mb-3">Rent The Museum</h2>
@@ -99,7 +101,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <a href="/events/rental" class="btn btn-primary mb-3">Learn About Renting</a>
           </div>
           <div class="col-lg-6">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/images/Moton-Auditorium.png'; ?>" alt="" class="fluid">
+            <img src="<?php echo get_stylesheet_directory_uri() . '/images/Moton-Auditorium.png'; ?>" alt="Moton Auditorium" class="fluid">
           </div>
         </div>
       </div>
@@ -116,6 +118,7 @@ $learn_page = get_page_by_template('learn-template.php')[0];
       <div class="col-lg-6 content-tile text-center">
         <h3 class="text-moton-eggplant mt-5"><?php echo $learn_page->post_title; ?></h3>
         <?php echo get_the_excerpt($learn_page->ID); ?>
+	<a href="/learn" class="btn btn-primary">Read More</a>
       </div>
   </div>
   <!-- <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($events_page->ID); ?>); background-size: cover; background-repeat: no-repeat;">
@@ -126,11 +129,12 @@ $learn_page = get_page_by_template('learn-template.php')[0];
       <div class="col-lg-6"></div>
   </div> -->
   <div class="row" style="background-image: url(<?php echo get_the_post_thumbnail_url($give_page->ID); ?>); background-size: cover; background-repeat: no-repeat;">
-      <div class="col-lg-6"></div>
       <div class="col-lg-6 content-tile text-center">
         <h3 class="text-moton-eggplant mt-5"><?php echo $give_page->post_title; ?></h3>
         <?php echo get_the_excerpt($give_page->ID); ?>
+        <a href="/give" class="btn btn-primary">Read More</a>
       </div>
+      <div class="col-lg-6"></div>
   </div>
 </div>
 

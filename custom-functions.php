@@ -71,12 +71,90 @@ add_filter( 'pre_get_posts', 'moton_filter_pre_get_posts' );
 add_post_type_support( 'page', 'excerpt' );
 
 function replace_excerpt_button_class($text) {
+	$text = str_replace('<p>', '<p class="mt-auto">', $text);
 	$text = str_replace('btn-secondary', 'btn-primary', $text);
 	$text = str_replace('Read More...', 'Read More', $text);
 	$text = str_replace('[...]', '', $text);
 	return $text;
 }
 
-add_filter('get_the_excerpt', 'replace_excerpt_button_class'); 
+add_filter('get_the_excerpt', 'replace_excerpt_button_class');
+
+function moton_get_upcoming_events() {
+	$events_query = new WP_Query([
+		'post_type' => 'tribe_events',
+		'posts_per_page' => 10
+	]);
+
+	$events = moton_create_event_details_from_tribe_events($events_query);
+	wp_reset_postdata();
+	return $events;
+}
+
+function moton_create_event_details_from_tribe_events($events_query) {
+	$events = [
+		'featured_events' => [],
+		'regular_events' => []
+	];
+	foreach($events_query->posts as $event){
+		$event_details = [
+			'title' => get_the_title($event->ID),
+			'featured_image' => get_the_post_thumbnail_url($event->ID),
+			'featured_image_alt' => get_post_meta( get_post_thumbnail_id($event->ID), '_wp_attachment_image_alt', true),
+			'permalink' => get_the_permalink($event->ID),
+			'featured' => get_post_meta($event->ID, '_tribe_featured', true),
+			'event_start' => get_post_meta($event->ID, '_EventStartDate', true),
+			'event_end' => get_post_meta($event->ID, '_EventEndDate', true),
+			'content' => '',
+			'friendly_date' => '',
+			'friendly_time' => ''
+		];
+
+		$event_details['friendly_date'] = moton_convert_to_friendly_date($event_details);
+		$event_details['friendly_time'] = moton_convert_to_friendly_time($event_details);
+
+		if ($event_details['featured'] == '1') {
+			$event_details['content'] = get_the_content($event->ID);
+			array_push($events['featured_events'], $event_details);
+		} else {
+			array_push($events['regular_events'], $event_details);
+		}
+	}
+	function sort_by_startdate($a, $b) {
+		return strtotime($b['event_start']) - strtotime($a['event_start']);
+	}
+	usort($events['regular_events'], 'sort_by_startdate');
+	usort($events['featured_events'], 'sort_by_startdate');
+
+	function remove_old_events($event) {
+		return strtotime($event['event_start']) > time();
+	}
+	$events['regular_events'] = array_filter($events['regular_events'], 'remove_old_events');
+	$events['featured_events'] = array_filter($events['featured_events'], 'remove_old_events');
+
+	$output = array_slice($events['regular_events'], 0, 3);
+	$reversed = array_reverse($output);
+	$events['regular_events'] = $reversed;
+	return $events;
+}
+
+function moton_convert_to_friendly_date($event_details) {
+	$start_datetime = getdate(strtotime($event_details['event_start']));
+	$end_datetime = getdate(strtotime($event_details['event_end']));;
+	$day_of_week = $start_datetime['weekday'];
+	$month = $start_datetime['month'];
+	$day = $start_datetime['mday'];
+	$year = $start_datetime['year'];
+	$event_date = $day_of_week . ', ' . $month . ' ' . $day . ', ' . $year;
+	return $event_date;
+}
+
+function moton_convert_to_friendly_time($event_details) {
+	$start_timestamp = strtotime($event_details['event_start']);
+	$end_timestamp = strtotime($event_details['event_end']);
+	$start_formatted = date('h:i A', $start_timestamp);
+	$end_formatted = date('h:i A', $end_timestamp);
+	return $start_formatted . ' to ' . $end_formatted;
+}
 
 

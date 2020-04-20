@@ -29,7 +29,26 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
-
+		<!-- <div class="search-wrapper bg-moton-eggplant">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 offset-lg-6 col-md-5 offset-md-6 col-sm-5 offset-sm-5 col-xs-5">
+					<?php get_search_form(); ?>
+					<button id="open-search-button" class="btn btn-primary float-right">
+						<i class="fa fa-search"></i>
+					</button>
+					<button id="close-search-button" style="display:none;" class="btn btn-primary float-right">
+						<i class="fa fa-close"></i>
+					</button>
+					</div>
+					<div class="col-lg-1 col-md-1 col-sm-2 d-xs-none">
+						<button class="btn btn-warning float-right">
+							Give
+						</button>
+					</div>
+				</div>
+			</div>
+		</div> -->
 		<nav class="navbar navbar-expand-md navbar-light">
 
 		<?php if ( 'container' == $container ) : ?>
@@ -40,7 +59,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php if ( ! has_custom_logo() ) { ?>
 
 						<?php if ( is_front_page() && is_home() ) : ?>
-
 							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
 
 						<?php else : ?>
@@ -76,5 +94,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php endif; ?>
 
 		</nav><!-- .site-navigation -->
+			<div class="container search-wrapper">
+				<div class="row mt-3 mb-4">
+					<div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3">
+					<?php get_search_form(); ?>
+					</div>
+				</div>
+			</div>
 
 	</div><!-- #wrapper-navbar end -->
