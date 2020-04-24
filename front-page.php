@@ -45,7 +45,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         ?>
         <div class="row mt-3">
           <div class="col-lg-6">
-            <h5><i class="fa fa-clock-o text-moton-orange"></i> Noon-4:00 p.m., Monday-Saturday</h5>
+            <h5><i class="fa fa-clock-o text-moton-orange"></i> 12 - 4 p.m., Monday-Saturday</h5>
              <div class="icon-offset">
               <p>Also by appointment</p>
              </div>
