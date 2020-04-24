@@ -29,7 +29,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<p class="text-center">
 							<img src="/wp-content/themes/moton-museum-child-theme/images/RRMM_Logo_Eggplant.png" alt="moton museum logo">
 						</p>
-						<p class="text-moton-eggplant">900 Griffin Blvd. Farmville, VA 23901 | Museum Hours 12PM - 4PM Mon. - Sat. | <a href="tel: 1-434-315-8775">434.315.8775</a> | <a href="mailto:info@motonmuseum.org">info@motonmuseum.org</a> &nbsp; &nbsp;
+						<p class="text-moton-eggplant">900 Griffin Blvd. Farmville, VA 23901 | Museum Hours 12 – 4 p.m. Mon. - Sat. | <a href="tel: 1-434-315-8775">434.315.8775</a> | <a href="mailto:info@motonmuseum.org">info@motonmuseum.org</a> &nbsp; &nbsp;
 						</p>
 						<p>	
 							<a href="https://twitter.com/motonmuseum?lang=en" title="Twitter"><i class="fa fa-twitter   footer-social text-moton-eggplant"></i></a>&nbsp;
