@@ -70,14 +70,7 @@ add_filter( 'pre_get_posts', 'moton_filter_pre_get_posts' );
 
 add_post_type_support( 'page', 'excerpt' );
 
-function get_custom_button_text($button) {
-	$button = get_field( "custom_button_text" );
-	if( $button ) {
-    	echo $button;
-	} else {
-    	echo 'Read More';
-	}
-}
+$button = get_field( "custom_button_text" );
 
 function replace_excerpt_button_class($text) {
 	global $button;
