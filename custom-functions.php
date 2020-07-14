@@ -80,6 +80,7 @@ function get_custom_button_text($button) {
 }
 
 function replace_excerpt_button_class($text) {
+	global $button;
 	$text = str_replace('<p>', '<p class="mt-auto">', $text);
 	$text = str_replace('btn-secondary', 'btn-primary', $text);
 	$text = str_replace('Read More...', $button, $text);
