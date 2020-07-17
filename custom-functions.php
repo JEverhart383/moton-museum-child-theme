@@ -70,12 +70,12 @@ add_filter( 'pre_get_posts', 'moton_filter_pre_get_posts' );
 
 add_post_type_support( 'page', 'excerpt' );
 
-function replace_excerpt_button_class($text) {
-	$button = get_field( "custom_button_text" );
-	if( $button = NULL) { echo 'Read More'; }
+function replace_excerpt_button_class($text, $post) {
+	$button = get_field( "custom_button_text", $post->ID );
+	if($button) { echo 'Read More'; }
 	$text = str_replace('<p>', '<p class="mt-auto">', $text);
 	$text = str_replace('btn-secondary', 'btn-primary', $text);
-	$text = str_replace('Read More...', 'Read More', $text);
+	$text = str_replace('Read More...', $button, $text);
 	$text = str_replace('[...]', '', $text);
 	return $text;
 }
