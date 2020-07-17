@@ -72,7 +72,7 @@ add_post_type_support( 'page', 'excerpt' );
 
 function replace_excerpt_button_class($text, $post) {
 	$button = get_field( "custom_button_text", $post->ID );
-	if($button) { echo 'Read More'; }
+	if($button = FALSE) { echo 'Read More'; }
 	$text = str_replace('<p>', '<p class="mt-auto">', $text);
 	$text = str_replace('btn-secondary', 'btn-primary', $text);
 	$text = str_replace('Read More...', $button, $text);
