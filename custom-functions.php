@@ -70,7 +70,7 @@ add_filter( 'pre_get_posts', 'moton_filter_pre_get_posts' );
 
 add_post_type_support( 'page', 'excerpt' );
 
-function replace_excerpt_button_class($text, $post) {
+function replace_excerpt_button_class($text) {
 	$button = get_field( "custom_button_text", $post->ID );
 	if($button = FALSE) { echo 'Read More'; }
 	$text = str_replace('<p>', '<p class="mt-auto">', $text);
