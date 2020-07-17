@@ -75,7 +75,7 @@ function replace_excerpt_button_class($text, $post) {
 	if($button = FALSE) { echo 'Read More'; }
 	$text = str_replace('<p>', '<p class="mt-auto">', $text);
 	$text = str_replace('btn-secondary', 'btn-primary', $text);
-	$text = str_replace('Read More...', $button, $text);
+	$text = str_replace('Read More...', 'Read More', $text);
 	$text = str_replace('[...]', '', $text);
 	return $text;
 }
