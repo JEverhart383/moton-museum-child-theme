@@ -34,8 +34,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<main class="site-main" id="main">
 				
-				<?php echo do_shortcode("[wpcd_child_categories_dropdown]"); ?>
-
 				<?php if ( have_posts() ) : ?>
 
 					<?php /* Start the Loop */ ?>
