@@ -33,6 +33,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
 			<main class="site-main" id="main">
+				
+				<?php echo do_shortcode("[wpcd_child_categories_dropdown]"); ?>
 
 				<?php if ( have_posts() ) : ?>
 
